@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.4/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.2.0" xmi:id="-_aNvcFLkG6dHmKhaz93BwA"
+    name="new_supporting_material,_4kVeYOGBEdyp34pwdTOSVQ" guid="-_aNvcFLkG6dHmKhaz93BwA"
+    changeDate="2008-02-22T15:30:44.671-0500">
+  <mainDescription>&lt;table width=&quot;100%&quot;>
+
+    &lt;tbody>
+
+        &lt;tr>
+
+            &lt;td>
+
+                &lt;img style=&quot;WIDTH: 33px; HEIGHT: 36px&quot; height=&quot;121&quot; alt=&quot;Mountain Goat Software icon&quot;&#xD;
+                src=&quot;resources/MountainGoat.png&quot; width=&quot;93&quot; />
+
+            &lt;/td>
+
+            &lt;td>Os Direitos autorais do Conteúdo são de Mountain Goat Software LLC &lt;/td>
+
+            &lt;td>&lt;a href=&quot;http://www.mountaingoatsoftware.com/copyright_notice&quot;>Nota de Direitos Autorais&lt;/a> &lt;/td>
+
+        &lt;/tr>
+
+    &lt;/tbody>
+
+&lt;/table></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

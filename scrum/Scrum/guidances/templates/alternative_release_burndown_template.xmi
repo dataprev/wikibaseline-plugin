@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.4/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.2.0" xmi:id="-bKVHMbaFeNSjZm8cNlTSyA"
+    name="new_template,_spsk0PVrEdyJbYuqG3X5Ag" guid="-bKVHMbaFeNSjZm8cNlTSyA">
+  <attachments>resources/BurndownBarchart.xls</attachments>
+</org.eclipse.epf.uma:GuidanceDescription>

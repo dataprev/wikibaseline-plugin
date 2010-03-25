@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-dInqFen82Gwj3TVpo4x-cg"
+    name=",_2kViUESNEdyDx7cbCULuLg" guid="-dInqFen82Gwj3TVpo4x-cg" authors="Lyndon Washington"
+    changeDate="2008-07-30T12:55:41.484-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>&lt;p>Veja &lt;a class=&quot;elementLink&quot; href=&quot;./../../../Scrum/guidances/termdefinitions/daily_scrum_3599F65C.html&quot;&#xD;
+    guid=&quot;_wzGykF5YEd22Gu98eFOlrQ&quot;>Daily Scrum&lt;/a>. &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

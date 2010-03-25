@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.4/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.2.0" xmi:id="-pG2ESbyFiJiYPp8g3_H-Ow"
+    name="sprint_review_meeting,_i_fkQOF-Edyp34pwdTOSVQ" guid="-pG2ESbyFiJiYPp8g3_H-Ow">
+  <copyrightStatement href="uma://_6Ab_EOF4Edyp34pwdTOSVQ#_4kVeYOGBEdyp34pwdTOSVQ"/>
+  <mainDescription>Ao final de cada Sprint, uma Reunião Sprint Review é realizada. Durante esta reunião, o Scrum Team apresenta o que foi realizado durante o Sprint. Tipicamente, esta apresentação é feita na forma de uma demonstração das novas funcionalidades.&lt;br /> &lt;br /> Participantes da Reunião Sprint Review, tipicamente inclui o Product Owner, o Scrum Team, o Scrum Master, a diretoria, clientes e engenheiros de outros projetos.&lt;br /> &lt;br /> Durante a Reunião Sprint Review o projeto é avaliado baseado no Sprint Goal, determinado durante a Reunião Sprint Planning. O ideal é que a equipe tenha concluído todos os itens do Product Backlog alocados para o Sprint, mas é mais importante que eles alcancem Sprint Goal.</mainDescription> <keyConsiderations>A Reunião de Sprint Review intencionalmente se mantém informal, normalmente com regras proibindo o uso de apresentações em PowerPoint e não permitindo mais que duas horas de preparação da mesma. Uma Reunião Sprint Review não deve se tornar uma distração ou um desvio significante para o Scrum Team; pelo contrário, ela deve ser um resultado natural do Sprint.&lt;br /></keyConsiderations>
+</org.eclipse.epf.uma:TaskDescription>

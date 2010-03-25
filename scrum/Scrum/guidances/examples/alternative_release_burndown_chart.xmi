@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-KkrHQnR4XqgdNpWEvfFEtw"
+    name=",_zUZ0MPVpEdyJbYuqG3X5Ag" guid="-KkrHQnR4XqgdNpWEvfFEtw" changeDate="2008-08-19T14:32:51.690-0700">
+  <mainDescription>&lt;p>O &lt;a class=&quot;elementLink&quot; href=&quot;./../../../Scrum/workproducts/release_burndown_chart_7E6A4A45.html&quot;&#xD;
+    guid=&quot;_tFw9IPVoEdyJbYuqG3X5Ag&quot;>Release Burndown Chart&lt;/a> típico do Scrum mostra um único valor - a mudança na quantidade de trabalho restante. Em alguns casos, sua simplicidade é maravilhosa. Entretanto, ela também pode mascarar o que pode estar acontecendo em um projeto. Por exemplo, suponha que um time esperasse avançar 40 (horas, pontos, o que for), mas o último Sprint Burndown Chart mostra apenas o progresso de 10. O time foi mais lento do que o esperado ou mais trabalho foi acrescentado à libertação? É importante saber a resposta a esta pergunta, porque nós não podemos realmente prever quando a liberação será feita sem ele. Com isto em mente, eu apresentei o seguinte tipo de Burndown Chart: &lt;/p>
+
+&lt;p>
+
+    &lt;img height=&quot;300&quot; alt=&quot;&quot; src=&quot;resources/altrelburndown1.gif&quot; width=&quot;400&quot; />
+
+&lt;/p>
+
+&lt;p>Neste Burndown Chart, a altura de cada barra representa a quantidade de trabalho restante na libertação. Eu prefiro estimar os itens do &lt;a class=&quot;elementLink&quot; href=&quot;./../../../Scrum/workproducts/product_backlog_68345C16.html&quot;&#xD;
+    guid=&quot;_OZIPIOF8Edyp34pwdTOSVQ&quot;>Product Backlog&lt;/a>, em "Story Points", porque eles mostram uma liberação com 175 "Story Points" planejados para o Sprint 1. O time terminou 25 pontos no Sprint 1, restando 150 para o início do Sprint 2. Haviam 120 no início do Sprint 3. Portanto, o topo da barra é reduzido pela quantidade de trabalho que o time termina em um determinado Sprint. Antes do início do Sprint 4, o &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../../Scrum/roles/product_owner_10E7BD3.html&quot; guid=&quot;_QcnRMOF5Edyp34pwdTOSVQ&quot;>Product Owner&lt;/a> acrescentou trabalho ao projeto. Este trabalho adicional é mostrado na parte inferior da barra do quarto Sprint. Você pode ver que a altura vertical do Sprint 4 vai aproximadamente de -40 a 95, ou 135 pontos de trabalho remanescentes. Quarenta desses 135 pontos são de trabalho novo. &lt;/p>
+
+&lt;p>Antes do início do Sprint 6, algum trabalho foi removido pelo &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../../Scrum/roles/product_owner_10E7BD3.html&quot; guid=&quot;_QcnRMOF5Edyp34pwdTOSVQ&quot;>Product Owner&lt;/a>. Assim como um aumento no escopo, uma diminuição também fica na parte debaixo. Isto é verdade para o trabalho removido, tanto para o que foi inicialmente planejado como para o que foi adicionado durante o projeto. &lt;/p>
+
+&lt;p>Uma forma de prever quantos Sprints um projeto terá, é desenhar uma linha de tendência entre as barras e alargar a linha de base. Por exemplo: &lt;/p>
+
+&lt;p>
+
+    &lt;img height=&quot;300&quot; alt=&quot;&quot; src=&quot;resources/altrelburndown2.gif&quot; width=&quot;400&quot; />
+
+&lt;/p>
+
+&lt;p>Um problema com isto é que a previsão da data de término como acima não inclui a taxa de mudança do escopo do projeto. Você também pode prever o número de Sprints necessários, desenhando uma linha de tendência entre as mudanças que ocorrem na parte inferior das barras, conforme mostrado abaixo: &lt;/p>
+
+&lt;p>
+
+    &lt;img height=&quot;300&quot; alt=&quot;&quot; src=&quot;resources/altrelburndown3.gif&quot; width=&quot;400&quot; /> 
+
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:GuidanceDescription>

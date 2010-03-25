@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-f9YylbaBfAK7kFZ0wCySMg"
+    name=",_15X88ESREdyDx7cbCULuLg" guid="-f9YylbaBfAK7kFZ0wCySMg" authors="Lyndon Washington"
+    changeDate="2007-08-06T22:58:49.804-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>Ao final do Sprint o Scrum Team irá reunir-se em uma retrospectiva para discutir o que funcionou e não funcionou durante o Sprint. Isso proporciona feedback e oportunidade para adaptação do processo e permite que o processo evolua e adapte-se a equipe.&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

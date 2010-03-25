@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.4/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.2.0" xmi:id="-u_0D0nwGoZhpANLeqrq14A"
+    name="new_role,_O65KUOF6Edyp34pwdTOSVQ" guid="-u_0D0nwGoZhpANLeqrq14A" changeDate="2008-03-06T18:46:48.828-0500">
+  <copyrightStatement href="uma://_6Ab_EOF4Edyp34pwdTOSVQ#_4kVeYOGBEdyp34pwdTOSVQ"/>
+  <mainDescription>&lt;p>O Scrum Team: &lt;/p>
+
+&lt;ul>
+
+    &lt;li>É multifuncional, com sete (mais ou menos dois) membros; &lt;/li>
+
+    &lt;li>Seleciona o objetivo do Sprint (Sprint Goal) e especifica os produtos de trabalho necessários; &lt;/li>
+
+    &lt;li>Tem a liberdade de fazer qualquer coisa dentro das diretrizes do projeto para alcançar o objetivo do Sprint; &lt;/li>
+
+    &lt;li>Auto organiza-se e organiza suas atividades; e &lt;/li>
+
+    &lt;li>Apresenta os produtos de trabalho ao Product Owner. &lt;/li>
+
+&lt;/ul>
+
+&lt;p>Membros do Scrum Team não têm nenhum dos papéis tradicionais da engenharia de software, como  programador, designer, testador ou arquiteto. Todos no projeto trabalham juntos para finalizar a lista de atividades que eles coletivamente se comprometeram a realizar durante um Sprint. Scrum Teams desenvolvem um profundo espírito de camaradagem e o sentimento de que "estamos juntos nisso". &lt;/p>
+
+&lt;p>Um Scrum Team típico possui de 5 a 9 pessoas, mas é possível escalar utilizando um "Scrum de Scrums". &lt;/p></mainDescription>
+  <assignmentApproaches>&lt;p>Membros devem se dedicar em tempo integral, mas pode haver exceções (ex: administrador de banco de dados). &lt;/p>
+
+&lt;p>Deve-se alterar membros somente no intervalo entre Sprints. &lt;/p></assignmentApproaches>
+</org.eclipse.epf.uma:RoleDescription>

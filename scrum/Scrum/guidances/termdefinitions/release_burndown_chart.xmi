@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-5ZwUAb_042ViuoKsGdsWmw"
+    name="new_term_definition,_YCtMUF5eEd22Gu98eFOlrQ" guid="-5ZwUAb_042ViuoKsGdsWmw"
+    changeDate="2008-07-30T13:40:15.125-0400">
+  <mainDescription>&lt;p>Em um projeto Scrum, o time acompanha seu progresso com um plano de libertação, atualizando um Release Burndown Chart ao final de cada Sprint. O eixo horizontal do Release Burndown Chart mostra os Sprints; o eixo vertical mostra a quantidade de trabalho restante no início de cada Sprint. &lt;/p>
+
+&lt;p>O escopo deste gráfico é uma única Release, entretanto, um Product Burndown Chart abrange todas as Releases. &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

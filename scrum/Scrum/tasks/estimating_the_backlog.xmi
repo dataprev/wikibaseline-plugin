@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-cfGxn29uR-ajTuxloxCwVQ"
+    name=",_lesG8F53Ed22Gu98eFOlrQ" guid="-cfGxn29uR-ajTuxloxCwVQ" changeDate="2008-07-30T17:24:25.000-0400">
+  <mainDescription>&lt;p>Antes do Release Planning e, periodicamente, enquanto os itens de Product Backlog evoluem e o time adquire critérios através da experiência, o Scrum Team irá estimar o tamanho dos itens de Product Backlog.  Essa informação é fundamental para ajudar o Product Owner a tomar decisões de priorização (alguns itens podem ter sua prioridade diminuída se o Product Owner entender que um esforço maior será requerido para sua entrega). &lt;/p>
+
+&lt;p>Estimativas são relativas e mensuradas em "pontos" em vez de medida de esforço do mundo real. Para os inexperientes, isso pode parecer impraticável, mas após os primeiros Sprints, o Scrum Team pode, empiricamente, aplicar uma velocidade que permita prever mais precisamente a capacidade de entrega. &lt;br /> &lt;/p></mainDescription>
+  <purpose>Permite ao Product Owner tomar decisões de priorização.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

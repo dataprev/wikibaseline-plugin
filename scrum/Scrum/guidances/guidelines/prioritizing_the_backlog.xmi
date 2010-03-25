@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-zKwBZtjJMczpeWxduDoL4A"
+    name="prioritizing_the_backlog,_PmtE0F5oEd22Gu98eFOlrQ" guid="-zKwBZtjJMczpeWxduDoL4A"
+    changeDate="2008-07-31T11:47:45.406-0400">
+  <mainDescription>&lt;p>Scrum não determina como o Product Backlog é priorizado.  Algumas técnicas são: &lt;/p>
+
+&lt;ul>
+
+    &lt;li>Modelo Kano &lt;/li>
+
+    &lt;li>Triagem por Temas &lt;/li>
+
+    &lt;li>Pontuação por Tema &lt;/li>
+
+    &lt;li>Peso Relativo &lt;/li>
+
+&lt;/ul>
+
+&lt;p>Para maiores informações, visite &lt;a&#xD;
+    href=&quot;http://www.mountaingoatsoftware.com/system/presentation/file/78/Cohn_PrioritizingYourBacklog.pdf&quot;&#xD;
+    target=&quot;_blank&quot;>Priorizando o Product Backlog&lt;/a> por Mike Cohn. &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

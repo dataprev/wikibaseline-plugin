@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.4/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.2.0" xmi:id="-f7PDqWbPWJ4XP9HiP8IVKQ"
+    name="release_burndown_chart,_tFw9IPVoEdyJbYuqG3X5Ag" guid="-f7PDqWbPWJ4XP9HiP8IVKQ"
+    changeDate="2008-03-19T00:00:22.125-0400">
+  <copyrightStatement href="uma://_6Ab_EOF4Edyp34pwdTOSVQ#_4kVeYOGBEdyp34pwdTOSVQ"/>
+  <mainDescription>&lt;p>Em um projeto Scrum, o time acompanha seu progresso com um plano de libertação, atualizando um Release Burndown Chart ao final de cada Sprint. O eixo horizontal do Release Burndown Chart mostra os Sprints; o eixo vertical mostra a quantidade de trabalho restante no início de cada Sprint. O trabalho restante pode ser representado com qualquer unidade, da preferência do time - Story Points, Ideal Days, Team Days, etc. &lt;/p>
+
+&lt;p>
+
+    &lt;img height=&quot;358&quot; alt=&quot;&quot; src=&quot;resources/releaseburndown.png&quot; width=&quot;298&quot; />
+
+&lt;/p>
+
+&lt;p>Neste gráfico, o time iniciou um projeto que foi planejado com onze Sprints de duas semanas. Eles iniciaram com 200 Story Points de trabalho. O primeiro Sprint correu bem, e a partir do gráfico pode-se inferir que eles tinham cerca de 180 Story Points de trabalho remanescente após o primeiro Sprint. Durante o segundo Sprint, entretanto, o trabalho estimado restante realmente aumentou. Isso pode ter sido causado por atividades adicionadas ao projeto ou porque o time alterou algumas estimativas do trabalho restante. A partir dali o projeto prosseguiu bem. O progresso diminuiu durante o Sprint 7, mas depois foi rapidamente recuperado. &lt;/p>
+
+&lt;p>Esse tipo de Release Burndown Chart funciona muito bem em várias situações e em vários times. Entretanto, em projetos com muitas mudanças de requisitos, talvez seja interessante olhar um &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../Scrum/guidances/examples/alternative_release_burndown_chart_565346BF.html&quot;&#xD;
+    guid=&quot;_zUZ0MPVpEdyJbYuqG3X5Ag&quot;>Alternative Release Burndown Chart&lt;/a>. &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ArtifactDescription>

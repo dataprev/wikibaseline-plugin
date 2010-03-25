@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-r4CP_1w3uk0ClgSnUrm80w"
+    name="new_artifact,__uNYkPVgEdyMdecrgpMbRg" guid="-r4CP_1w3uk0ClgSnUrm80w" changeDate="2008-07-30T14:57:59.796-0400">
+  <copyrightStatement href="uma://_6Ab_EOF4Edyp34pwdTOSVQ#_4kVeYOGBEdyp34pwdTOSVQ"/>
+  <mainDescription>&lt;p>No Scrum é necessário que em cada Sprint seja entregue um incremento de produto potencialmente utilizável. Este incremento deve consistir de um arquivo executável gerado a partir de código exaustivamente testado e documentação dos procedimentos operacionais das funcionalidades, seja na forma de "Ajuda" ou "Documentação de Usuário". &lt;/p></mainDescription>
+  <keyConsiderations>&lt;p>Existe muito debate sobre a diferença entre "potencialmente utilizável (concluído)" e "utilizável". &lt;/p>
+
+&lt;p>Mike Cohn explica: &lt;/p>
+
+&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;>
+
+    &lt;p>.. "potencialmente utilizável" e "utilizável" não são a mesma coisa. Alguns projetos muito grandes ou complexos irão requerer o uso de "Sprint de Liberação" ou "Sprint Endurecido" ao final de um ciclo do projeto (por exemplo, 6 Sprints de 2 semanas e depois um Sprint de liberação de 2 semanas). O Sprint de Liberação não é uma área para despejo de lixo de trabalho malfeito; ao contrário, é um lugar onde algum endurecimento do sistema pode ocorrer. &lt;/p>
+
+&lt;/blockquote>
+
+&lt;p>Uma coisa é clara: o Scrum Team têm que chegar a um acordo na sua definição de "potencialmente utilizável" e "utilizável" e compartilhá-la com o Product Owner. &lt;/p></keyConsiderations>
+</org.eclipse.epf.uma:ArtifactDescription>

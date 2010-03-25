@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-NrSTjiuzDnfEiZxA7N_tFA"
+    name=",_RunHEF8ZEd22Gu98eFOlrQ" guid="-NrSTjiuzDnfEiZxA7N_tFA" changeDate="2008-07-31T12:05:05.046-0400">
+  <mainDescription>&lt;p>No início de um projeto o time criará um Release Plan em alto nível. Não é possível que o time conheça tudo no início, portanto, um plano detalhado não é necessário. O Release Plan deverá abordar: &lt;/p>
+
+&lt;ul>
+
+    &lt;li>A quantidade e a duração dos Sprints &lt;/li>
+
+    &lt;li>Quantas pessoas ou times deverão participar do projeto &lt;/li>
+
+    &lt;li>O número de Releases &lt;/li>
+
+    &lt;li>O valor a ser entregue em cada Release &lt;/li>
+
+    &lt;li>A data de liberação dos Releases &lt;/li>
+
+&lt;/ul>
+
+&lt;p>As principais informações para o Release Planning são: &lt;/p>
+
+&lt;ul>
+
+    &lt;li>A priorização do Product Backlog &lt;/li>
+
+    &lt;li>A estimativa da velocidade &lt;/li>
+
+    &lt;li>O Product Owner deve atender as datas importantes (time-to-market) impostas pelo mercado. &lt;/li>
+
+&lt;/ul></mainDescription>
+  <purpose>Para nivelar expectativas (internas e externas) e proativamente revelar necessidades e dependências.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-ILQMonu5qLiOKjvMlGtDPg"
+    name="new_concept,_28Gp8F6AEd22Gu98eFOlrQ" guid="-ILQMonu5qLiOKjvMlGtDPg" changeDate="2008-07-31T08:47:49.906-0400">
+  <mainDescription>&lt;p>Story Point é, provavelmente, a unidade de estimativa mais utilizada entre os times ágeis hoje. O nome é derivado dos times ágeis, que normalmente expressam os requisitos como User Story (Estória do Usuário). Um Story Point é uma estimativa relativa de "tamanho" da atividade comparada com outra atividade no projeto. Portanto, espera-se que uma estória de 10 pontos demore o dobro do tempo que uma estória de 5 pontos. &lt;/p>
+
+&lt;p>Estimar não é o mesmo que quantificar, mas incluir, implicitamente, o entendimento do time sobre a complexidade, o risco e o tempo para o trabalho que está sendo estimado. Um Story Point é único para o time e não pode ser comparado com o Story Point de outro time. Pode ser contraproducente mapear Story Points com o seu equivalente em tempo absoluto; a técnica aceita para a previsão de tempo para conclusão é a velocidade do time. &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

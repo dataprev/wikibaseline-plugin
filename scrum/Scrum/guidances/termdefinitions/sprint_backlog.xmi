@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-d3HBqQdxKSpDApXqiQo9Iw"
+    name="new_term_definition,_UJZQwESQEdyDx7cbCULuLg" guid="-d3HBqQdxKSpDApXqiQo9Iw"
+    authors="Lyndon Washington" changeDate="2007-08-10T11:54:16.636-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>O Sprint Backlog contém o trabalho que o time se comprometeu para o Sprint, incluindo todas as tarefas que devem ser executadas para implementar os Itens do Product Backlog. O Sprint Backlog pertence ao time.&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

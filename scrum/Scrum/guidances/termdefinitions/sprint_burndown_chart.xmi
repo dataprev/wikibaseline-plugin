@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-7-9C-kYSzQHQc_uQkYm-_g"
+    name=",_mJqYQESQEdyDx7cbCULuLg" guid="-7-9C-kYSzQHQc_uQkYm-_g" authors="Lyndon Washington"
+    changeDate="2007-08-06T22:51:28.983-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>O Sprint Burndown Chart é uma representação gráfica do trabalho restante no Sprint. O eixo vertical mostra o tempo do esforço restantes para o Sprint. O eixo horizontal mostra os dias do Sprint. O Burndown é exibido pela linha que desce a partir do início do Sprint com as horas iniciais, até ao final do Sprint, sem horas restantes. O Burndown Chart é usado pelo time para avaliar quão bem o Sprint está indo. &lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

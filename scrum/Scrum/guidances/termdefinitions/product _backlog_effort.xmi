@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-ZheRa5V_fOtaDb9_tJXPiQ"
+    name=",_Tlr8MESPEdyDx7cbCULuLg" guid="-ZheRa5V_fOtaDb9_tJXPiQ" authors="Lyndon Washington"
+    changeDate="2007-08-06T22:40:12.380-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>Um item do Product Backlog tem uma quantidade de esforço associado a ele. Representa uma estimativa da equipa da complexidade do item e é normalmente expressa em "Dias Ideais" ou "Story Points". &lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

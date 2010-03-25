@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.4/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.2.0" xmi:id="-e9FxENZuCFr7WkungxFv0Q"
+    name="new_guideline,_SCv2oOF7Edyp34pwdTOSVQ" guid="-e9FxENZuCFr7WkungxFv0Q" changeDate="2008-02-22T14:21:10.421-0500">
+  <copyrightStatement href="uma://_6Ab_EOF4Edyp34pwdTOSVQ#_4kVeYOGBEdyp34pwdTOSVQ"/>
+  <mainDescription>&lt;p>A principal forma de escalar o Scrum, para trabalhar com grandes times é coordenar um "Scrum de Scrums". Com essa abordagem cada Scrum Team atua normalmente, mas cada time também contribui com uma pessoa para assistir às Reuniões Scrum de Scrum e coordenar o trabalho de múltiplos Scrum Teams.  Essas reuniões são análogas às Reuniões Daily Scrum, mas não necessariamente acontecem todo dia. Em muitas organizações é suficiente ter uma Reunião Scrum de Scrums de duas a três vezes por semana. &lt;/p>
+
+&lt;p>A ilustração abaixo mostra como uma abordagem Scrum de Scrums permite o escalamento (neste caso para 243 pessoas). Cada célula representa uma pessoa em um Scrum Time. A parte de baixo desta ilustração mostra times com nove desenvolvedores em cada um. Uma pessoa de cada time (a célula de cor diferente) também participa em um Scrum de Scrums para coordenar o trabalho acima daquele time. Então, daquelas nove pessoas do time, uma é selecionada (desta vez assinalado com linhas diagonais) para participar no que poderia ser chamado de Scrum de Scrums de Scrums. &lt;/p>&lt;img height=&quot;242&quot; alt=&quot;Scrum of scrums&quot; src=&quot;http://www.mountaingoatsoftware.com/images/scrumofscrums.gif&quot;&#xD;
+width=&quot;400&quot; /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_6Ab_IeF4Edyp34pwdTOSVQ"
+      guid="_6Ab_IeF4Edyp34pwdTOSVQ">
+    <resourceDescriptors xmi:id="_SCv2ouF7Edyp34pwdTOSVQ" id="-u_0D0nwGoZhpANLeqrq14A"
+        uri="roles/scrum_team.xmi"/>
+    <resourceDescriptors xmi:id="_VuLmkeF7Edyp34pwdTOSVQ" id="-e9FxENZuCFr7WkungxFv0Q"
+        uri="guidances/guidelines/scrum_of_scrums.xmi"/>
+    <resourceDescriptors xmi:id="_JIsokOGCEdyp34pwdTOSVQ" id="-v5-z0Dm_JF0P2xtKd0FDrA"
+        uri="workproducts/product_backlog.xmi"/>
+    <resourceDescriptors xmi:id="_RWaQ4eGCEdyp34pwdTOSVQ" id="-_aNvcFLkG6dHmKhaz93BwA"
+        uri="guidances/supportingmaterials/scrum_copyright.xmi"/>
+    <resourceDescriptors xmi:id="_C3NVAeGFEdyp34pwdTOSVQ" id="-OUAVEKu-MpijImO-oy53Rg"
+        uri="customcategories/scrum_overview.xmi"/>
+    <resourceDescriptors xmi:id="_MDvQYOvVEdyEBJO-n5l0YA" id="--OmeeCdOSH1ki1_i9TN0kg"
+        uri="roles/product_owner.xmi"/>
+    <resourceDescriptors xmi:id="_chOZsOvZEdyEBJO-n5l0YA" id="-yuXxE_O0V_WcpgWeUmX8fQ"
+        uri="roles/ScrumMaster.xmi"/>
+    <resourceDescriptors xmi:id="_J5sZUO4HEdyKhak5q-de9w" id="-2Wj3V9GSZ2lAtr6E5xISGQ"
+        uri="tasks/sprint_planning_meeting.xmi"/>
+    <resourceDescriptors xmi:id="_BANase4IEdyKhak5q-de9w" id="-pG2ESbyFiJiYPp8g3_H-Ow"
+        uri="tasks/sprint_review_meeting.xmi"/>
+    <resourceDescriptors xmi:id="_EM1SQO4JEdyKhak5q-de9w" id="-bGl4WDpeag1duq9jSWKwLg"
+        uri="tasks/the_daily_scrum.xmi"/>
+    <resourceDescriptors xmi:id="_tu9GEfVSEdyMdecrgpMbRg" id="-N_A3a4KFML6T529HCXOO8w"
+        uri="workproducts/sprint_backlog.xmi"/>
+    <resourceDescriptors xmi:id="_tyh-gPVSEdyMdecrgpMbRg" id="-rfXDg30uLSggSmzHYCYVlg"
+        uri="guidances/examples/example_product_backlog.xmi"/>
+    <resourceDescriptors xmi:id="_Z5pLsPVWEdyMdecrgpMbRg" id="-xohW6akCXeAm21kFxbyPgA"
+        uri="tasks/sprint_retrospective.xmi"/>
+    <resourceDescriptors xmi:id="_i9-cgPViEdyMdecrgpMbRg" id="-B-d2Wl0Vyk_-I-RwtKzhKQ"
+        uri="guidances/supportingmaterials/scrum_overview.xmi"/>
+    <resourceDescriptors xmi:id="_R8M2MPVlEdyMdecrgpMbRg" id="-r4CP_1w3uk0ClgSnUrm80w"
+        uri="workproducts/potentially_shippable_product_incremement.xmi"/>
+    <resourceDescriptors xmi:id="_zU2gIPVpEdyJbYuqG3X5Ag" id="-f7PDqWbPWJ4XP9HiP8IVKQ"
+        uri="workproducts/release_burndown_chart.xmi"/>
+    <resourceDescriptors xmi:id="_hhPfIPVqEdyJbYuqG3X5Ag" id="-KkrHQnR4XqgdNpWEvfFEtw"
+        uri="guidances/examples/alternative_release_burndown_chart.xmi"/>
+    <resourceDescriptors xmi:id="_jFCW0Vp4Ed2BQt1093tw4A" id="-JNLDOZ4BSGnyspLdCslHEA"
+        uri="guidances/supportingmaterials/eclipse_copyright.xmi"/>
+    <resourceDescriptors xmi:id="_wSDQwF5UEd22Gu98eFOlrQ" id="-DbU1fL11htQSZHU3Epp8DQ"
+        uri="guidances/termdefinitions/burndown_chart.xmi"/>
+    <resourceDescriptors xmi:id="_wSDQwV5UEd22Gu98eFOlrQ" id="-dInqFen82Gwj3TVpo4x-cg"
+        uri="guidances/termdefinitions/daily_standup.xmi"/>
+    <resourceDescriptors xmi:id="_wSNBwF5UEd22Gu98eFOlrQ" id="-thr-EbJ0MVoSOjB07oOFhg"
+        uri="guidances/termdefinitions/impediments.xmi"/>
+    <resourceDescriptors xmi:id="_wSNBwV5UEd22Gu98eFOlrQ" id="-ZheRa5V_fOtaDb9_tJXPiQ"
+        uri="guidances/termdefinitions/product%20_backlog_effort.xmi"/>
+    <resourceDescriptors xmi:id="_wSNBwl5UEd22Gu98eFOlrQ" id="-bCkVJ-SAp9NAYXzU082xAw"
+        uri="guidances/termdefinitions/product_backlog.xmi"/>
+    <resourceDescriptors xmi:id="_wSf8sF5UEd22Gu98eFOlrQ" id="-wYUGztUXJo-IFJmZFHndZA"
+        uri="guidances/termdefinitions/product_backlog_item.xmi"/>
+    <resourceDescriptors xmi:id="_wSf8sV5UEd22Gu98eFOlrQ" id="-h9Xx7G_42VKrAJeiPoEXhA"
+        uri="guidances/termdefinitions/product_owner.xmi"/>
+    <resourceDescriptors xmi:id="_wSptsF5UEd22Gu98eFOlrQ" id="-p9KrleiUF9SffJPa0uU1dA"
+        uri="guidances/termdefinitions/release.xmi"/>
+    <resourceDescriptors xmi:id="_wSptsV5UEd22Gu98eFOlrQ" id="-xuoAc3dllNfz3v23Uo9T3Q"
+        uri="guidances/termdefinitions/scrum_master.xmi"/>
+    <resourceDescriptors xmi:id="_wSy3oF5UEd22Gu98eFOlrQ" id="-HIv84TcqJsq4hsPh7HjCYw"
+        uri="guidances/termdefinitions/sprint.xmi"/>
+    <resourceDescriptors xmi:id="_wS8ooF5UEd22Gu98eFOlrQ" id="-d3HBqQdxKSpDApXqiQo9Iw"
+        uri="guidances/termdefinitions/sprint_backlog.xmi"/>
+    <resourceDescriptors xmi:id="_wS8ooV5UEd22Gu98eFOlrQ" id="-7-9C-kYSzQHQc_uQkYm-_g"
+        uri="guidances/termdefinitions/sprint_burndown_chart.xmi"/>
+    <resourceDescriptors xmi:id="_wTGZoF5UEd22Gu98eFOlrQ" id="-vYDEjOsyiDLCq28_kSwqLg"
+        uri="guidances/termdefinitions/sprint_goals.xmi"/>
+    <resourceDescriptors xmi:id="_wTGZoV5UEd22Gu98eFOlrQ" id="-sn7UkWq_5c2tFfkZq7XYRw"
+        uri="guidances/termdefinitions/sprint_planning_meeting.xmi"/>
+    <resourceDescriptors xmi:id="_wTGZol5UEd22Gu98eFOlrQ" id="-f9YylbaBfAK7kFZ0wCySMg"
+        uri="guidances/termdefinitions/sprint_retrospective_meeting.xmi"/>
+    <resourceDescriptors xmi:id="_wTPjkF5UEd22Gu98eFOlrQ" id="-hbgtBeEVvgklEJEe87Vp4g"
+        uri="guidances/termdefinitions/sprint_review_meeting.xmi"/>
+    <resourceDescriptors xmi:id="_wTPjkV5UEd22Gu98eFOlrQ" id="-zpO7ZtcagvtTA67EJ_m4rg"
+        uri="guidances/termdefinitions/sprint_task.xmi"/>
+    <resourceDescriptors xmi:id="_wTPjkl5UEd22Gu98eFOlrQ" id="-TiV3gmeEcaJC9fHWazqHLA"
+        uri="guidances/termdefinitions/story_point.xmi"/>
+    <resourceDescriptors xmi:id="_wTZUkF5UEd22Gu98eFOlrQ" id="-EqhbZ-SkHp61Y2vSUUoCOQ"
+        uri="guidances/termdefinitions/team.xmi"/>
+    <resourceDescriptors xmi:id="_wTZUkV5UEd22Gu98eFOlrQ" id="-3pNlw9WCCt2_yQj7AdMFOQ"
+        uri="guidances/termdefinitions/theme.xmi"/>
+    <resourceDescriptors xmi:id="_wTiegF5UEd22Gu98eFOlrQ" id="-Pqj9AAvbOheabK1S1iNR7w"
+        uri="guidances/termdefinitions/timebox.xmi"/>
+    <resourceDescriptors xmi:id="_wTiegV5UEd22Gu98eFOlrQ" id="-_YSdL-PCrHetsPuFPMuZvA"
+        uri="guidances/termdefinitions/Velocity.xmi"/>
+    <resourceDescriptors xmi:id="_7f1BsF5dEd22Gu98eFOlrQ" id="-qw1zzcdgS16heKCPSMtXNA"
+        uri="guidances/termdefinitions/daily_scrum.xmi"/>
+    <resourceDescriptors xmi:id="_YC29UF5eEd22Gu98eFOlrQ" id="-sKs1c_RcKx_VoP3H4546-w"
+        uri="guidances/termdefinitions/product_burndown_chart.xmi"/>
+    <resourceDescriptors xmi:id="_-UdQAV5eEd22Gu98eFOlrQ" id="-5ZwUAb_042ViuoKsGdsWmw"
+        uri="guidances/termdefinitions/release_burndown_chart.xmi"/>
+    <resourceDescriptors xmi:id="_8QOnEF5hEd22Gu98eFOlrQ" id="-TMAqqwL18VXjxXqVxv9bbA"
+        uri="guidances/supportingmaterials/scrum_references.xmi"/>
+    <resourceDescriptors xmi:id="_ZMv6kF5_Ed22Gu98eFOlrQ" id="-cfGxn29uR-ajTuxloxCwVQ"
+        uri="tasks/estimating_the_backlog.xmi"/>
+    <resourceDescriptors xmi:id="_5Rs0oF8KEd22Gu98eFOlrQ" id="-eyjJa_TnruHlbgFfOCM5Jg"
+        uri="guidances/guidelines/estimation_techniques.xmi"/>
+    <resourceDescriptors xmi:id="_5R1-kF8KEd22Gu98eFOlrQ" id="-ILQMonu5qLiOKjvMlGtDPg"
+        uri="guidances/concepts/story_points.xmi"/>
+    <resourceDescriptors xmi:id="_QYVQoV8ZEd22Gu98eFOlrQ" id="-zKwBZtjJMczpeWxduDoL4A"
+        uri="guidances/guidelines/prioritizing_the_backlog.xmi"/>
+    <resourceDescriptors xmi:id="_QYVQol8ZEd22Gu98eFOlrQ" id="-_17L09AWhCtpcfaV1O_oIA"
+        uri="tasks/prioritizing_the_backlog.xmi"/>
+    <resourceDescriptors xmi:id="_n0Z8sV8dEd22Gu98eFOlrQ" id="-NrSTjiuzDnfEiZxA7N_tFA"
+        uri="tasks/release_planning.xmi"/>
+    <resourceDescriptors xmi:id="_XrI2QV8hEd22Gu98eFOlrQ" id="-JGaSKq8Cd3WrAqkPLTUUGg"
+        uri="workproducts/taskboard.xmi"/>
+    <resourceDescriptors xmi:id="_OcNAgV8sEd22Gu98eFOlrQ" id="-3AgWsgStwa4K2S5b_pS3jA"
+        uri="guidances/templates/burndown_chart.xmi"/>
+    <resourceDescriptors xmi:id="_vnxNgV8sEd22Gu98eFOlrQ" id="-EQ9gGoEO7QfWA_0iXzILuA"
+        uri="workproducts/sprint_burndown_chart.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:MethodPlugin xmi:id="_6Ab_EOF4Edyp34pwdTOSVQ" name="Scrum"
+      guid="_6Ab_EOF4Edyp34pwdTOSVQ" briefDescription="Plug-In Scrum" authors="Mike Cohn, Ken Clyne, Claude Aubry et al"
+      changeDate="2008-07-30T10:49:30.453-0700" copyrightStatement="_Ybm6AFp4Ed2BQt1093tw4A">
+    <methodPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_EeF4Edyp34pwdTOSVQ"
+        name="Content" guid="_6Ab_EeF4Edyp34pwdTOSVQ">
+      <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_EuF4Edyp34pwdTOSVQ"
+          name="Categories" guid="_6Ab_EuF4Edyp34pwdTOSVQ">
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_E-F4Edyp34pwdTOSVQ"
+            name="Domains" guid="_6Ab_E-F4Edyp34pwdTOSVQ"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_FOF4Edyp34pwdTOSVQ"
+            name="Disciplines" guid="_6Ab_FOF4Edyp34pwdTOSVQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_4tsR4OGFEdyp34pwdTOSVQ"
+              name="scrum_activities" guid="_4tsR4OGFEdyp34pwdTOSVQ" presentationName="Atividades Scrum"
+              tasks="_4gCKAOF9Edyp34pwdTOSVQ _sKJ9AOF-Edyp34pwdTOSVQ _i_fkQOF-Edyp34pwdTOSVQ _oSM0AOF-Edyp34pwdTOSVQ _lesG8F53Ed22Gu98eFOlrQ _btIuEF8LEd22Gu98eFOlrQ _RunHEF8ZEd22Gu98eFOlrQ"/>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_FeF4Edyp34pwdTOSVQ"
+            name="RoleSets" guid="_6Ab_FeF4Edyp34pwdTOSVQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:RoleSet" xmi:id="_hUIKcOGFEdyp34pwdTOSVQ"
+              name="scrum_roles" guid="_hUIKcOGFEdyp34pwdTOSVQ" presentationName="Papéis Scrum"
+              roles="_QcnRMOF5Edyp34pwdTOSVQ _Bw-twOF6Edyp34pwdTOSVQ _O65KUOF6Edyp34pwdTOSVQ"/>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_FuF4Edyp34pwdTOSVQ"
+            name="WP Types" guid="_6Ab_FuF4Edyp34pwdTOSVQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:WorkProductType" xmi:id="_IAabwOGLEdyp34pwdTOSVQ"
+              name="scrum_work_products" guid="_IAabwOGLEdyp34pwdTOSVQ" presentationName="Produtos de Trabalho Scrum"
+              workProducts="__uNYkPVgEdyMdecrgpMbRg _OZIPIOF8Edyp34pwdTOSVQ _tFw9IPVoEdyJbYuqG3X5Ag _Q5Ki8OF8Edyp34pwdTOSVQ _YzmSIF8sEd22Gu98eFOlrQ _rU4H4F8fEd22Gu98eFOlrQ"/>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_F-F4Edyp34pwdTOSVQ"
+            name="Tools" guid="_6Ab_F-F4Edyp34pwdTOSVQ"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_GOF4Edyp34pwdTOSVQ"
+            name="StandardCategories" guid="_6Ab_GOF4Edyp34pwdTOSVQ"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_GeF4Edyp34pwdTOSVQ"
+            name="CustomCategories" guid="_6Ab_GeF4Edyp34pwdTOSVQ">
+          <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_GuF4Edyp34pwdTOSVQ"
+              name="Hidden" guid="_6Ab_GuF4Edyp34pwdTOSVQ">
+            <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_6Ab_G-F4Edyp34pwdTOSVQ"
+                name="Custom Categories" guid="_6Ab_G-F4Edyp34pwdTOSVQ" categorizedElements="_Om8IAOGEEdyp34pwdTOSVQ"/>
+          </childPackages>
+          <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_Om8IAOGEEdyp34pwdTOSVQ"
+              name="scrum_overview" guid="_Om8IAOGEEdyp34pwdTOSVQ" presentationName="Visão Geral do Scrum"
+              categorizedElements="_lC260PVhEdyMdecrgpMbRg _hUIKcOGFEdyp34pwdTOSVQ _IAabwOGLEdyp34pwdTOSVQ _4tsR4OGFEdyp34pwdTOSVQ _CWWNMOGREdyp34pwdTOSVQ">
+            <methodElementProperty xmi:id="_ZMWAcOGEEdyp34pwdTOSVQ" name="PUBLISH_CATEGORY"
+                value="true"/>
+            <presentation xmi:id="-OUAVEKu-MpijImO-oy53Rg" href="uma://-OUAVEKu-MpijImO-oy53Rg#-OUAVEKu-MpijImO-oy53Rg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_CWWNMOGREdyp34pwdTOSVQ"
+              name="scrum_guidance" guid="_CWWNMOGREdyp34pwdTOSVQ" presentationName="Orientação Scrum"
+              categorizedElements="_SCv2oOF7Edyp34pwdTOSVQ _L1t78F5nEd22Gu98eFOlrQ _PmtE0F5oEd22Gu98eFOlrQ _8PMFQF5hEd22Gu98eFOlrQ _28Gp8F6AEd22Gu98eFOlrQ"/>
+        </childPackages>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_6Ab_HOF4Edyp34pwdTOSVQ"
+          name="CoreContent" guid="_6Ab_HOF4Edyp34pwdTOSVQ">
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_Arzq4OF5Edyp34pwdTOSVQ"
+            name="Scrum" guid="_Arzq4OF5Edyp34pwdTOSVQ" briefDescription="Scrum">
+          <contentElements xsi:type="org.eclipse.epf.uma:Role" xmi:id="_QcnRMOF5Edyp34pwdTOSVQ"
+              name="product_owner" guid="_QcnRMOF5Edyp34pwdTOSVQ" presentationName="Product Owner"
+              briefDescription="O Product Owner representa os interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog."
+              responsibleFor="_OZIPIOF8Edyp34pwdTOSVQ">
+            <presentation xmi:id="--OmeeCdOSH1ki1_i9TN0kg" href="uma://--OmeeCdOSH1ki1_i9TN0kg#--OmeeCdOSH1ki1_i9TN0kg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Role" xmi:id="_Bw-twOF6Edyp34pwdTOSVQ"
+              name="scrummaster" guid="_Bw-twOF6Edyp34pwdTOSVQ" presentationName="ScrumMaster"
+              briefDescription="O ScrumMaster é o responsável por garantir que o Scrum Team se oriente pelos valores e práticas do Scrum. O ScrumMaster protege o time certificando-se de que os membros não se comprometam com compromissos além dos que eles conseguem cumprir dentro de um Sprint. O ScrumMaster facilita o Daily Scrum e se torna o responsável pela remoção de quaisquer obstáculos observados pelo time durante estas reuniões. ">
+            <presentation xmi:id="-yuXxE_O0V_WcpgWeUmX8fQ" href="uma://-yuXxE_O0V_WcpgWeUmX8fQ#-yuXxE_O0V_WcpgWeUmX8fQ"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Role" xmi:id="_O65KUOF6Edyp34pwdTOSVQ"
+              name="scrum_team" guid="_O65KUOF6Edyp34pwdTOSVQ" presentationName="Scrum Team"
+              briefDescription="O Scrum Team constrói o produto que o cliente irá utilizar:  o software ou o website, por exemplo. O time no Scrum é multifuncional - ele contém todas as especialidades necessárias para entregar o produto potencialmente utilizável a cada Sprint - e é auto organizável, com um alto grau de autonomia e responsabilidade."
+              responsibleFor="__uNYkPVgEdyMdecrgpMbRg _tFw9IPVoEdyJbYuqG3X5Ag _Q5Ki8OF8Edyp34pwdTOSVQ">
+            <presentation xmi:id="-u_0D0nwGoZhpANLeqrq14A" href="uma://-u_0D0nwGoZhpANLeqrq14A#-u_0D0nwGoZhpANLeqrq14A"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Guideline" xmi:id="_SCv2oOF7Edyp34pwdTOSVQ"
+              name="scrum_of_scrums" guid="_SCv2oOF7Edyp34pwdTOSVQ" presentationName="Scrum of Scrums">
+            <presentation xmi:id="-e9FxENZuCFr7WkungxFv0Q" href="uma://-e9FxENZuCFr7WkungxFv0Q#-e9FxENZuCFr7WkungxFv0Q"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_OZIPIOF8Edyp34pwdTOSVQ"
+              name="product_backlog" guid="_OZIPIOF8Edyp34pwdTOSVQ" presentationName="Product Backlog"
+              briefDescription="O Product Backlog é a lista principal de todas as funcionalidades desejadas no produto. "
+              examples="_t2djoPVPEdyMdecrgpMbRg" templates="_OO6A0F8rEd22Gu98eFOlrQ">
+            <presentation xmi:id="-v5-z0Dm_JF0P2xtKd0FDrA" href="uma://-v5-z0Dm_JF0P2xtKd0FDrA#-v5-z0Dm_JF0P2xtKd0FDrA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_Q5Ki8OF8Edyp34pwdTOSVQ"
+              name="sprint_backlog" guid="_Q5Ki8OF8Edyp34pwdTOSVQ" presentationName="Sprint Backlog"
+              briefDescription="O Sprint Backlog é a lista de tarefas que o Scrum Team se comprometeu a concluir no Sprint corrente. "
+              templates="_OO6A0F8rEd22Gu98eFOlrQ">
+            <presentation xmi:id="-N_A3a4KFML6T529HCXOO8w" href="uma://-N_A3a4KFML6T529HCXOO8w#-N_A3a4KFML6T529HCXOO8w"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_4gCKAOF9Edyp34pwdTOSVQ"
+              name="sprint_planning_meeting" guid="_4gCKAOF9Edyp34pwdTOSVQ" presentationName="Reunião Sprint Planning"
+              briefDescription="A Reunião Sprint Planning é onde o Scrum Team e o Product Owner determinam quais funcionalidades e atividades serão realizadas no próximo Sprint."
+              performedBy="_O65KUOF6Edyp34pwdTOSVQ" mandatoryInput="_OZIPIOF8Edyp34pwdTOSVQ"
+              output="_Q5Ki8OF8Edyp34pwdTOSVQ" additionallyPerformedBy="_QcnRMOF5Edyp34pwdTOSVQ _Bw-twOF6Edyp34pwdTOSVQ">
+            <presentation xmi:id="-2Wj3V9GSZ2lAtr6E5xISGQ" href="uma://-2Wj3V9GSZ2lAtr6E5xISGQ#-2Wj3V9GSZ2lAtr6E5xISGQ"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_i_fkQOF-Edyp34pwdTOSVQ"
+              name="sprint_review_meeting" guid="_i_fkQOF-Edyp34pwdTOSVQ" presentationName="Reunião Sprint Review"
+              briefDescription="Todo Sprint se encerra com a Reunião Sprint Review, onde o Scrum Team demonstra o incremento de produto potencialmente utilizável."
+              performedBy="_O65KUOF6Edyp34pwdTOSVQ" mandatoryInput="_Q5Ki8OF8Edyp34pwdTOSVQ"
+              output="_tFw9IPVoEdyJbYuqG3X5Ag _rU4H4F8fEd22Gu98eFOlrQ" additionallyPerformedBy="_QcnRMOF5Edyp34pwdTOSVQ _Bw-twOF6Edyp34pwdTOSVQ">
+            <presentation xmi:id="-pG2ESbyFiJiYPp8g3_H-Ow" href="uma://-pG2ESbyFiJiYPp8g3_H-Ow#-pG2ESbyFiJiYPp8g3_H-Ow"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_oSM0AOF-Edyp34pwdTOSVQ"
+              name="the_daily_scrum" guid="_oSM0AOF-Edyp34pwdTOSVQ" presentationName="Daily Scrum"
+              briefDescription="Daily Scrum é uma reunião rápida com todos os membros do Scrum Team e o Scrum Master."
+              performedBy="_O65KUOF6Edyp34pwdTOSVQ" mandatoryInput="_rU4H4F8fEd22Gu98eFOlrQ"
+              output="_rU4H4F8fEd22Gu98eFOlrQ _Q5Ki8OF8Edyp34pwdTOSVQ _YzmSIF8sEd22Gu98eFOlrQ"
+              additionallyPerformedBy="_Bw-twOF6Edyp34pwdTOSVQ">
+            <presentation xmi:id="-bGl4WDpeag1duq9jSWKwLg" href="uma://-bGl4WDpeag1duq9jSWKwLg#-bGl4WDpeag1duq9jSWKwLg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_sKJ9AOF-Edyp34pwdTOSVQ"
+              name="sprint_retrospective" guid="_sKJ9AOF-Edyp34pwdTOSVQ" presentationName="Retrospectiva do Sprint"
+              briefDescription="Em seguida da reunião Sprint Review, o Scrum Team se reúne para a Retrospectiva do Sprint."
+              performedBy="_O65KUOF6Edyp34pwdTOSVQ" additionallyPerformedBy="_QcnRMOF5Edyp34pwdTOSVQ _Bw-twOF6Edyp34pwdTOSVQ">
+            <presentation xmi:id="-xohW6akCXeAm21kFxbyPgA" href="uma://-xohW6akCXeAm21kFxbyPgA#-xohW6akCXeAm21kFxbyPgA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:SupportingMaterial" xmi:id="_4kVeYOGBEdyp34pwdTOSVQ"
+              name="scrum_copyright" guid="_4kVeYOGBEdyp34pwdTOSVQ" presentationName="Direitos Autorais"
+              variabilityType="extendsReplaces" variabilityBasedOnElement="_Ybm6AFp4Ed2BQt1093tw4A">
+            <presentation xmi:id="-_aNvcFLkG6dHmKhaz93BwA" href="uma://-_aNvcFLkG6dHmKhaz93BwA#-_aNvcFLkG6dHmKhaz93BwA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Example" xmi:id="_t2djoPVPEdyMdecrgpMbRg"
+              name="example_product_backlog" guid="_t2djoPVPEdyMdecrgpMbRg" presentationName="Exemplo de Product Backlog">
+            <presentation xmi:id="-rfXDg30uLSggSmzHYCYVlg" href="uma://-rfXDg30uLSggSmzHYCYVlg#-rfXDg30uLSggSmzHYCYVlg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="__uNYkPVgEdyMdecrgpMbRg"
+              name="potentially_shippable_product_incremement" guid="__uNYkPVgEdyMdecrgpMbRg"
+              presentationName="Incremento de Produto Potencialmente Utilizável." briefDescription="O resultado de cada Sprint é um incremento de produto potencialmente utilizável.">
+            <presentation xmi:id="-r4CP_1w3uk0ClgSnUrm80w" href="uma://-r4CP_1w3uk0ClgSnUrm80w#-r4CP_1w3uk0ClgSnUrm80w"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:SupportingMaterial" xmi:id="_lC260PVhEdyMdecrgpMbRg"
+              name="scrum_overview" guid="_lC260PVhEdyMdecrgpMbRg" presentationName="Visão Geral do Scrum"
+              briefDescription="Scrum é um framework Ágil de gestão de projetos usado para entregar aos clientes, de forma iterativa, incrementos de produto de alto valor. Scrum depende de times hábeis e auto-organizadas para entregar os incrementos do produto. Também depende de um cliente, ou Dono do Produto, que indique um time com uma lista de funcionalidades desejadas, e que use o valor de negocio como mecanismo de priorização.">
+            <presentation xmi:id="-B-d2Wl0Vyk_-I-RwtKzhKQ" href="uma://-B-d2Wl0Vyk_-I-RwtKzhKQ#-B-d2Wl0Vyk_-I-RwtKzhKQ"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_tFw9IPVoEdyJbYuqG3X5Ag"
+              name="release_burndown_chart" guid="_tFw9IPVoEdyJbYuqG3X5Ag" presentationName="Release Burndown Chart"
+              briefDescription="O Release Burndown Chart acompanha o progresso de um time comparado ao seu planejamento. "
+              examples="_zUZ0MPVpEdyJbYuqG3X5Ag" templates="_OO6A0F8rEd22Gu98eFOlrQ">
+            <presentation xmi:id="-f7PDqWbPWJ4XP9HiP8IVKQ" href="uma://-f7PDqWbPWJ4XP9HiP8IVKQ#-f7PDqWbPWJ4XP9HiP8IVKQ"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Example" xmi:id="_zUZ0MPVpEdyJbYuqG3X5Ag"
+              name="alternative_release_burndown_chart" guid="_zUZ0MPVpEdyJbYuqG3X5Ag"
+              presentationName="Release Burndown Chart Alternativo">
+            <presentation xmi:id="-KkrHQnR4XqgdNpWEvfFEtw" href="uma://-KkrHQnR4XqgdNpWEvfFEtw#-KkrHQnR4XqgdNpWEvfFEtw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:SupportingMaterial" xmi:id="_Ybm6AFp4Ed2BQt1093tw4A"
+              name="eclipse_copyright" guid="_Ybm6AFp4Ed2BQt1093tw4A" presentationName="Direitos Autorais">
+            <presentation xmi:id="-JNLDOZ4BSGnyspLdCslHEA" href="uma://-JNLDOZ4BSGnyspLdCslHEA#-JNLDOZ4BSGnyspLdCslHEA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn0F5UEd22Gu98eFOlrQ"
+              name="burndown_chart" guid="_veyn0F5UEd22Gu98eFOlrQ" presentationName="Burndown Chart">
+            <presentation xmi:id="-DbU1fL11htQSZHU3Epp8DQ" href="uma://-DbU1fL11htQSZHU3Epp8DQ#-DbU1fL11htQSZHU3Epp8DQ"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn0V5UEd22Gu98eFOlrQ"
+              name="daily_standup" guid="_veyn0V5UEd22Gu98eFOlrQ" presentationName="Daily Standup">
+            <presentation xmi:id="-dInqFen82Gwj3TVpo4x-cg" href="uma://-dInqFen82Gwj3TVpo4x-cg#-dInqFen82Gwj3TVpo4x-cg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn0l5UEd22Gu98eFOlrQ"
+              name="impediments" guid="_veyn0l5UEd22Gu98eFOlrQ" presentationName="Impediments">
+            <presentation xmi:id="-thr-EbJ0MVoSOjB07oOFhg" href="uma://-thr-EbJ0MVoSOjB07oOFhg#-thr-EbJ0MVoSOjB07oOFhg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn015UEd22Gu98eFOlrQ"
+              name="product _backlog_effort" guid="_veyn015UEd22Gu98eFOlrQ" presentationName="Esforço do Product Backlog">
+            <presentation xmi:id="-ZheRa5V_fOtaDb9_tJXPiQ" href="uma://-ZheRa5V_fOtaDb9_tJXPiQ#-ZheRa5V_fOtaDb9_tJXPiQ"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn1F5UEd22Gu98eFOlrQ"
+              name="product_backlog" guid="_veyn1F5UEd22Gu98eFOlrQ" presentationName="Product Backlog">
+            <presentation xmi:id="-bCkVJ-SAp9NAYXzU082xAw" href="uma://-bCkVJ-SAp9NAYXzU082xAw#-bCkVJ-SAp9NAYXzU082xAw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn1V5UEd22Gu98eFOlrQ"
+              name="product_backlog_item" guid="_veyn1V5UEd22Gu98eFOlrQ" presentationName="Item do Product Backlog">
+            <presentation xmi:id="-wYUGztUXJo-IFJmZFHndZA" href="uma://-wYUGztUXJo-IFJmZFHndZA#-wYUGztUXJo-IFJmZFHndZA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn1l5UEd22Gu98eFOlrQ"
+              name="product_owner" guid="_veyn1l5UEd22Gu98eFOlrQ" presentationName="Product Owner">
+            <presentation xmi:id="-h9Xx7G_42VKrAJeiPoEXhA" href="uma://-h9Xx7G_42VKrAJeiPoEXhA#-h9Xx7G_42VKrAJeiPoEXhA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn115UEd22Gu98eFOlrQ"
+              name="release" guid="_veyn115UEd22Gu98eFOlrQ" presentationName="Release">
+            <presentation xmi:id="-p9KrleiUF9SffJPa0uU1dA" href="uma://-p9KrleiUF9SffJPa0uU1dA#-p9KrleiUF9SffJPa0uU1dA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn2F5UEd22Gu98eFOlrQ"
+              name="scrum_master" guid="_veyn2F5UEd22Gu98eFOlrQ" presentationName="ScrumMaster">
+            <presentation xmi:id="-xuoAc3dllNfz3v23Uo9T3Q" href="uma://-xuoAc3dllNfz3v23Uo9T3Q#-xuoAc3dllNfz3v23Uo9T3Q"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn2V5UEd22Gu98eFOlrQ"
+              name="sprint" guid="_veyn2V5UEd22Gu98eFOlrQ" presentationName="Sprint">
+            <presentation xmi:id="-HIv84TcqJsq4hsPh7HjCYw" href="uma://-HIv84TcqJsq4hsPh7HjCYw#-HIv84TcqJsq4hsPh7HjCYw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn2l5UEd22Gu98eFOlrQ"
+              name="sprint_backlog" guid="_veyn2l5UEd22Gu98eFOlrQ" presentationName="Sprint Backlog">
+            <presentation xmi:id="-d3HBqQdxKSpDApXqiQo9Iw" href="uma://-d3HBqQdxKSpDApXqiQo9Iw#-d3HBqQdxKSpDApXqiQo9Iw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn215UEd22Gu98eFOlrQ"
+              name="sprint_burndown_chart" guid="_veyn215UEd22Gu98eFOlrQ" presentationName="Sprint Burndown Chart">
+            <presentation xmi:id="-7-9C-kYSzQHQc_uQkYm-_g" href="uma://-7-9C-kYSzQHQc_uQkYm-_g#-7-9C-kYSzQHQc_uQkYm-_g"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn3F5UEd22Gu98eFOlrQ"
+              name="sprint_goals" guid="_veyn3F5UEd22Gu98eFOlrQ" presentationName="Metas do Sprint">
+            <presentation xmi:id="-vYDEjOsyiDLCq28_kSwqLg" href="uma://-vYDEjOsyiDLCq28_kSwqLg#-vYDEjOsyiDLCq28_kSwqLg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn3V5UEd22Gu98eFOlrQ"
+              name="sprint_planning_meeting" guid="_veyn3V5UEd22Gu98eFOlrQ" presentationName="Reunião Sprint Planning">
+            <presentation xmi:id="-sn7UkWq_5c2tFfkZq7XYRw" href="uma://-sn7UkWq_5c2tFfkZq7XYRw#-sn7UkWq_5c2tFfkZq7XYRw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn3l5UEd22Gu98eFOlrQ"
+              name="sprint_retrospective_meeting" guid="_veyn3l5UEd22Gu98eFOlrQ" presentationName="Reunião Sprint Retrospective">
+            <presentation xmi:id="-f9YylbaBfAK7kFZ0wCySMg" href="uma://-f9YylbaBfAK7kFZ0wCySMg#-f9YylbaBfAK7kFZ0wCySMg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn315UEd22Gu98eFOlrQ"
+              name="sprint_review_meeting" guid="_veyn315UEd22Gu98eFOlrQ" presentationName="Reunião Sprint Review">
+            <presentation xmi:id="-hbgtBeEVvgklEJEe87Vp4g" href="uma://-hbgtBeEVvgklEJEe87Vp4g#-hbgtBeEVvgklEJEe87Vp4g"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn4F5UEd22Gu98eFOlrQ"
+              name="sprint_task" guid="_veyn4F5UEd22Gu98eFOlrQ" presentationName="Tarefa Sprint">
+            <presentation xmi:id="-zpO7ZtcagvtTA67EJ_m4rg" href="uma://-zpO7ZtcagvtTA67EJ_m4rg#-zpO7ZtcagvtTA67EJ_m4rg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn4V5UEd22Gu98eFOlrQ"
+              name="story_point" guid="_veyn4V5UEd22Gu98eFOlrQ" presentationName="Story Point">
+            <presentation xmi:id="-TiV3gmeEcaJC9fHWazqHLA" href="uma://-TiV3gmeEcaJC9fHWazqHLA#-TiV3gmeEcaJC9fHWazqHLA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn4l5UEd22Gu98eFOlrQ"
+              name="team" guid="_veyn4l5UEd22Gu98eFOlrQ" presentationName="Time">
+            <presentation xmi:id="-EqhbZ-SkHp61Y2vSUUoCOQ" href="uma://-EqhbZ-SkHp61Y2vSUUoCOQ#-EqhbZ-SkHp61Y2vSUUoCOQ"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn415UEd22Gu98eFOlrQ"
+              name="theme" guid="_veyn415UEd22Gu98eFOlrQ" presentationName="Tema">
+            <presentation xmi:id="-3pNlw9WCCt2_yQj7AdMFOQ" href="uma://-3pNlw9WCCt2_yQj7AdMFOQ#-3pNlw9WCCt2_yQj7AdMFOQ"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn5F5UEd22Gu98eFOlrQ"
+              name="timebox" guid="_veyn5F5UEd22Gu98eFOlrQ" presentationName="Timebox">
+            <presentation xmi:id="-Pqj9AAvbOheabK1S1iNR7w" href="uma://-Pqj9AAvbOheabK1S1iNR7w#-Pqj9AAvbOheabK1S1iNR7w"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_veyn5V5UEd22Gu98eFOlrQ"
+              name="Velocity" guid="_veyn5V5UEd22Gu98eFOlrQ" presentationName="Velocidade">
+            <presentation xmi:id="-_YSdL-PCrHetsPuFPMuZvA" href="uma://-_YSdL-PCrHetsPuFPMuZvA#-_YSdL-PCrHetsPuFPMuZvA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_wzGykF5YEd22Gu98eFOlrQ"
+              name="daily_scrum" guid="_wzGykF5YEd22Gu98eFOlrQ" presentationName="Daily Scrum">
+            <presentation xmi:id="-qw1zzcdgS16heKCPSMtXNA" href="uma://-qw1zzcdgS16heKCPSMtXNA#-qw1zzcdgS16heKCPSMtXNA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_7frQsF5dEd22Gu98eFOlrQ"
+              name="product_burndown_chart" guid="_7frQsF5dEd22Gu98eFOlrQ" presentationName="Product Burndown Chart">
+            <presentation xmi:id="-sKs1c_RcKx_VoP3H4546-w" href="uma://-sKs1c_RcKx_VoP3H4546-w#-sKs1c_RcKx_VoP3H4546-w"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:TermDefinition" xmi:id="_YCtMUF5eEd22Gu98eFOlrQ"
+              name="release_burndown_chart" guid="_YCtMUF5eEd22Gu98eFOlrQ" presentationName="Release Burndown Chart">
+            <presentation xmi:id="-5ZwUAb_042ViuoKsGdsWmw" href="uma://-5ZwUAb_042ViuoKsGdsWmw#-5ZwUAb_042ViuoKsGdsWmw"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:SupportingMaterial" xmi:id="_8PMFQF5hEd22Gu98eFOlrQ"
+              name="scrum_references" guid="_8PMFQF5hEd22Gu98eFOlrQ" presentationName="Referências">
+            <presentation xmi:id="-TMAqqwL18VXjxXqVxv9bbA" href="uma://-TMAqqwL18VXjxXqVxv9bbA#-TMAqqwL18VXjxXqVxv9bbA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Guideline" xmi:id="_L1t78F5nEd22Gu98eFOlrQ"
+              name="estimation_techniques" guid="_L1t78F5nEd22Gu98eFOlrQ" presentationName="Técnicas de Estimativa"
+              briefDescription="Na medida em que são adicionados itens ao Product Backlog, o tamanho destes itens são estimados pelo Scrum Time.">
+            <presentation xmi:id="-eyjJa_TnruHlbgFfOCM5Jg" href="uma://-eyjJa_TnruHlbgFfOCM5Jg#-eyjJa_TnruHlbgFfOCM5Jg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Guideline" xmi:id="_PmtE0F5oEd22Gu98eFOlrQ"
+              name="prioritizing_the_backlog" guid="_PmtE0F5oEd22Gu98eFOlrQ" presentationName="Priorizando o Backlog"
+              briefDescription="Técnicas para priorização do Product Backlog">
+            <presentation xmi:id="-zKwBZtjJMczpeWxduDoL4A" href="uma://-zKwBZtjJMczpeWxduDoL4A#-zKwBZtjJMczpeWxduDoL4A"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_lesG8F53Ed22Gu98eFOlrQ"
+              name="estimating_the_backlog" guid="_lesG8F53Ed22Gu98eFOlrQ" presentationName="Estimando o Product Backlog"
+              briefDescription="O Scrum Team irá estimar o tamanho de cada item do Product Backlog periodicamente"
+              conceptsAndPapers="_28Gp8F6AEd22Gu98eFOlrQ" guidelines="_L1t78F5nEd22Gu98eFOlrQ"
+              performedBy="_O65KUOF6Edyp34pwdTOSVQ" mandatoryInput="_OZIPIOF8Edyp34pwdTOSVQ"
+              output="_OZIPIOF8Edyp34pwdTOSVQ">
+            <presentation xmi:id="-cfGxn29uR-ajTuxloxCwVQ" href="uma://-cfGxn29uR-ajTuxloxCwVQ#-cfGxn29uR-ajTuxloxCwVQ"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Concept" xmi:id="_28Gp8F6AEd22Gu98eFOlrQ"
+              name="story_points" guid="_28Gp8F6AEd22Gu98eFOlrQ" presentationName="Story Points"
+              briefDescription="Um Story Point é a estimativa relativa do tamanho da atividade comparado com outra atividade no projeto.">
+            <presentation xmi:id="-ILQMonu5qLiOKjvMlGtDPg" href="uma://-ILQMonu5qLiOKjvMlGtDPg#-ILQMonu5qLiOKjvMlGtDPg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_btIuEF8LEd22Gu98eFOlrQ"
+              name="prioritizing_the_backlog" guid="_btIuEF8LEd22Gu98eFOlrQ" presentationName="Priorizando o Backlog"
+              briefDescription="Os itens de Product Backlog são priorizados pelo Product Owner previamente ao Release Planning e ao Sprint Planning."
+              guidelines="_PmtE0F5oEd22Gu98eFOlrQ" mandatoryInput="_OZIPIOF8Edyp34pwdTOSVQ"
+              output="_OZIPIOF8Edyp34pwdTOSVQ">
+            <presentation xmi:id="-_17L09AWhCtpcfaV1O_oIA" href="uma://-_17L09AWhCtpcfaV1O_oIA#-_17L09AWhCtpcfaV1O_oIA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_RunHEF8ZEd22Gu98eFOlrQ"
+              name="release_planning" guid="_RunHEF8ZEd22Gu98eFOlrQ" presentationName="Release Planning"
+              briefDescription="No início de um projeto o time criará um Release Plan em alto nível."
+              performedBy="_O65KUOF6Edyp34pwdTOSVQ" mandatoryInput="_OZIPIOF8Edyp34pwdTOSVQ"
+              additionallyPerformedBy="_QcnRMOF5Edyp34pwdTOSVQ _Bw-twOF6Edyp34pwdTOSVQ">
+            <presentation xmi:id="-NrSTjiuzDnfEiZxA7N_tFA" href="uma://-NrSTjiuzDnfEiZxA7N_tFA#-NrSTjiuzDnfEiZxA7N_tFA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_rU4H4F8fEd22Gu98eFOlrQ"
+              name="taskboard" guid="_rU4H4F8fEd22Gu98eFOlrQ" presentationName="Quadro de Tarefas"
+              briefDescription="O Quadro de Tarefas mostra todo o trabalho que o time está desenvolvendo durante o Sprint">
+            <presentation xmi:id="-JGaSKq8Cd3WrAqkPLTUUGg" href="uma://-JGaSKq8Cd3WrAqkPLTUUGg#-JGaSKq8Cd3WrAqkPLTUUGg"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Template" xmi:id="_OO6A0F8rEd22Gu98eFOlrQ"
+              name="burndown_chart" guid="_OO6A0F8rEd22Gu98eFOlrQ" presentationName="Burndown Chart"
+              briefDescription="Estas planilhas Excel fornecem capacidades úteis para a criação de Burndown Charts.">
+            <presentation xmi:id="-3AgWsgStwa4K2S5b_pS3jA" href="uma://-3AgWsgStwa4K2S5b_pS3jA#-3AgWsgStwa4K2S5b_pS3jA"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_YzmSIF8sEd22Gu98eFOlrQ"
+              name="sprint_burndown_chart" guid="_YzmSIF8sEd22Gu98eFOlrQ" presentationName="Sprint Burndown Chart "
+              briefDescription="O Sprint Burndown Chart é uma representação gráfica do trabalho restante no Sprint."
+              templates="_OO6A0F8rEd22Gu98eFOlrQ">
+            <presentation xmi:id="-EQ9gGoEO7QfWA_0iXzILuA" href="uma://-EQ9gGoEO7QfWA_0iXzILuA#-EQ9gGoEO7QfWA_0iXzILuA"/>
+          </contentElements>
+        </childPackages>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_6Ab_HeF4Edyp34pwdTOSVQ"
+          name="CapabilityPatterns" guid="_6Ab_HeF4Edyp34pwdTOSVQ"/>
+    </methodPackages>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_6Ab_HuF4Edyp34pwdTOSVQ"
+        name="DeliveryProcesses" guid="_6Ab_HuF4Edyp34pwdTOSVQ"/>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_6Ab_H-F4Edyp34pwdTOSVQ"
+        name="ProcessContributions" guid="_6Ab_H-F4Edyp34pwdTOSVQ"/>
+  </org.eclipse.epf.uma:MethodPlugin>
+</xmi:XMI>

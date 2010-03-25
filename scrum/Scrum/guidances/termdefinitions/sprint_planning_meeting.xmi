@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-sn7UkWq_5c2tFfkZq7XYRw"
+    name=",_d24NQESREdyDx7cbCULuLg" guid="-sn7UkWq_5c2tFfkZq7XYRw" authors="Lyndon Washington"
+    changeDate="2008-07-30T13:46:50.437-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>O inicio de um Sprint é marcado por uma reunião de planejamento na qual o Product Owner revisa os itens do Product Backlog de maior prioridade, e com base nessas informações o time irá selecionar os itens do Product Backlog que serão implementados durante o próximo Sprint.&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

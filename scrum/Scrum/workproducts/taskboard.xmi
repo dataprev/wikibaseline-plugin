@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-JGaSKq8Cd3WrAqkPLTUUGg"
+    name="new_artifact,_rU4H4F8fEd22Gu98eFOlrQ" guid="-JGaSKq8Cd3WrAqkPLTUUGg" changeDate="2008-07-31T12:44:26.578-0400">
+  <mainDescription>&lt;p>O Quadro de Tarefas mostra todo o trabalho que o time está desenvolvendo durante o Sprint. Ele é atualizado continuamente no decorrer do Sprint - se alguém pensa em alguma nova tarefa, eles a escrevem em um novo cartão e colocam-no no quadro. Antes ou durante um &lt;a class=&quot;elementLink&quot; href=&quot;./../../Scrum/tasks/the_daily_scrum_C8FB7908.html&quot;&#xD;
+    guid=&quot;_oSM0AOF-Edyp34pwdTOSVQ&quot;>Daily Scrum&lt;/a>, as estimativas são alteradas (para mais ou menos) e os cartões são movidos no quadro. &lt;/p>
+
+&lt;p>O Quadro de Tarefas pode se parecer assim: &lt;/p>
+
+&lt;p>
+
+    &lt;span class=&quot;articleImage&quot;>&lt;img style=&quot;WIDTH: 461px; HEIGHT: 336px&quot; height=&quot;447&quot; alt=&quot;&quot;&#xD;
+    src=&quot;resources/MockedTaskBoard.jpg&quot; width=&quot;600&quot; />&lt;a&#xD;
+    href=&quot;http://www.mountaingoatsoftware.com/system/hidden_asset/file/29/MockedTaskBoard.jpg&quot;>&lt;u>&lt;font&#xD;
+    color=&quot;#0000ff&quot;> &lt;/font>&lt;/u>&lt;/a>&lt;/span>
+
+&lt;/p>
+
+&lt;p>
+
+    &lt;span class=&quot;articleImage&quot;>&lt;br />
+
+     &lt;/span>
+
+&lt;/p>
+
+&lt;p>Cada linha no Quadro de Tarefas é um item do Product Backlog (neste exemplo, estórias).  Durante a &lt;a&#xD;
+    class=&quot;elementLinkWithUserText&quot; href=&quot;./../../Scrum/tasks/sprint_planning_meeting_9F0B8F28.html&quot;&#xD;
+    guid=&quot;_4gCKAOF9Edyp34pwdTOSVQ&quot;>Reunião Sprint Planning&lt;/a> o time define os itens do Product Backlog que eles conseguem concluir durante o próximo Sprint. Cada item do Product Backlog é desdobrado em vários itens de &lt;a class=&quot;elementLinkWithUserText&quot;&#xD;
+    href=&quot;./../../Scrum/workproducts/sprint_backlog_7A5B8A37.html&quot; guid=&quot;_Q5Ki8OF8Edyp34pwdTOSVQ&quot;>Sprint Backlog&lt;/a>. Cada um deles é representado por um cartão de tarefa que é colocado no Quadro de Tarefas. Cada cartão de tarefa é colocado inicialmente no Quadro de Tarefas na coluna "A fazer".  As colunas são: &lt;/p>
+
+&lt;ul>
+
+    &lt;li>&lt;b>Estória&lt;/b> – A descrição da estória (“Como usuário eu quero…”) são exibidas nesta linha. &lt;/li>
+
+    &lt;li>&lt;b>A fazer&lt;/b> – Nesta coluna ficam todos os cartões que não estão finalizados ou em andamento. &lt;/li>
+
+    &lt;li>&lt;b>Em andamento&lt;/b> – Qualquer cartão que é trabalhado fica nesta coluna. O programador que decide trabalhar nele, move-o quando se está pronto para iniciar a tarefa. Isto acontece frequentemente durante a Reunião Daily Scrum, quando alguém diz "Eu irei trabalhar em boojum hoje". &lt;/li>
+
+    &lt;li>&lt;b>A Verificar&lt;/b> – Muitas tarefas têm cartões de tarefas de teste correspondentes. Então, se existe um cartão "Codificar classe boojum", é provável haver um ou mais cartões de tarefas relativos aos testes: "Testar o boojum", "Desenvolver teste FitNesse para o boojum", "Desenvolver suporte para o boojum", etc.  Alguns cartões não têm sempre um cartão de teste correspondente ("Corrigir Bug 321 no Bugzilla"), portanto estes são colocados na coluna "A Verificar".  &lt;/li>
+
+    &lt;li>&lt;b>Concluído&lt;/b> – Os cartões são empilhados nesta coluna quando estão concluídos. Eles são removidos no final do Sprint. &lt;/li>
+
+&lt;/ul></mainDescription>
+  <purpose>Comunicar, de modo tangível, o progresso para os membros do time e outros interessados.</purpose> <representationOptions>Existe várias maneiras diferentes de se implementar um Quadro de Tarefas. Times alocados no mesmo local podem usar uma parede. Times alocados em locais distintos podem usar alguma ferramenta.</representationOptions>
+</org.eclipse.epf.uma:ArtifactDescription>

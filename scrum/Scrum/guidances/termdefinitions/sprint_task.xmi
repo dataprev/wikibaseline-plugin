@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-zpO7ZtcagvtTA67EJ_m4rg"
+    name=",_OG9iUESSEdyDx7cbCULuLg" guid="-zpO7ZtcagvtTA67EJ_m4rg" authors="Lyndon Washington"
+    changeDate="2007-08-06T23:02:49.702-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>O Sprint Backlog é composto por uma lista de tarefas que o time precisa fazer para completar os itens do Product Backlog que se comprometeram no início do Sprint. As tarefas do Sprint têm atributos para mostrar os pontos por pessoa, o estado da tarefa (ou seja, não iniciada, em andamento, impedida ou feita) e a quantidade de tempo restante para completar a tarefa.&lt;br /> &lt;br /> As tarefas do Sprint são o menor nível de trabalho representado nos Backlogs e referem-se ao trabalho que normalmente dura até 16 horas.&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-N_A3a4KFML6T529HCXOO8w"
+    name="sprint_backlog,_Q5Ki8OF8Edyp34pwdTOSVQ" guid="-N_A3a4KFML6T529HCXOO8w" changeDate="2008-07-31T14:20:08.515-0400">
+  <copyrightStatement href="uma://_6Ab_EOF4Edyp34pwdTOSVQ#_4kVeYOGBEdyp34pwdTOSVQ"/>
+  <mainDescription>&lt;p>Itens do Sprint Backlog são tirados do &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../Scrum/workproducts/product_backlog_68345C16.html&quot; guid=&quot;_OZIPIOF8Edyp34pwdTOSVQ&quot;>Product Backlog&lt;/a>, pelo time, baseado na prioridade definida pelo &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../Scrum/roles/product_owner_10E7BD3.html&quot; guid=&quot;_QcnRMOF5Edyp34pwdTOSVQ&quot;>Product Owner&lt;/a> e a percepção do time do tempo que será necessário para finalizar as várias funcionalidades. &lt;/p>
+
+&lt;p>É crítico que o time identifique os itens e tamanho do Sprint Backlog. Pelo fato deles estarem comprometidos em finalizar as tarefas, eles é que deverão escolher com o que irão se comprometer. &lt;/p>
+
+&lt;div id=&quot;content&quot;>
+
+    &lt;p>O Sprint Backlog, com muita frequência, é mantido como uma planilha Excel, mas também é possível usar seu sistema de rastreamento de erros ou algum dos vários produtos de software desenvolvidos especificamente para Scrum ou Agile. Um exemplo de como um Sprint Backlog em planilha Excel se parece: &lt;/p>&lt;img height=&quot;188&quot; alt=&quot;Sprint backlog&quot; src=&quot;resources/sprintbacklog.gif&quot; width=&quot;400&quot; /> 
+
+    &lt;p>Durante o Sprint, o &lt;a class=&quot;elementLink&quot; href=&quot;./../../Scrum/roles/scrummaster_357FCB70.html&quot;&#xD;
+        guid=&quot;_Bw-twOF6Edyp34pwdTOSVQ&quot;>ScrumMaster&lt;/a> mantém o Sprint Backlog, atualizando-o de forma a refletir quais tarefas estão finalizadas e quanto tempo o time acha que levará para completar as que ainda não estão. A estimativa de trabalho restante no Sprint é calculada diariamente e representada graficamente, resultando em um &lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../Scrum/workproducts/sprint_burndown_chart_F647C347.html&quot; guid=&quot;_YzmSIF8sEd22Gu98eFOlrQ&quot;>Sprint Burndown Chart&lt;/a>. &lt;/p>
+
+&lt;/div></mainDescription>
+</org.eclipse.epf.uma:ArtifactDescription>

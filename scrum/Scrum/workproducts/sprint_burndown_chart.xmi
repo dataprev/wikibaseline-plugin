@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-EQ9gGoEO7QfWA_0iXzILuA"
+    name="sprint_burndown_chart,_YzmSIF8sEd22Gu98eFOlrQ" guid="-EQ9gGoEO7QfWA_0iXzILuA"
+    changeDate="2008-07-31T14:13:47.718-0400">
+  <mainDescription>&lt;p>A estimativa de trabalho restante no Sprint é calculada diariamente e representada graficamente, resultando em um &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../Scrum/workproducts/sprint_burndown_chart_F647C347.html&quot; guid=&quot;_YzmSIF8sEd22Gu98eFOlrQ&quot;>Sprint Burndown Chart&lt;/a>. O eixo vertical mostra o tempo do esforço restantes para o Sprint. O eixo horizontal mostra os dias do Sprint. O Burndown é exibido pela linha que desce a partir do início do Sprint com as horas iniciais, até ao final do Sprint, sem horas restantes. &lt;/p>
+
+&lt;p>
+
+    &lt;img height=&quot;300&quot; alt=&quot;&quot; src=&quot;./resources/sprintburndown.jpg&quot; width=&quot;400&quot; />
+
+&lt;/p>
+
+&lt;p>O time faz o possível para alocar a quantidade certa de trabalho no Sprint, mas às vezes, durante a &lt;a class=&quot;elementLink&quot; href=&quot;./../../Scrum/tasks/sprint_planning_meeting_9F0B8F28.html&quot;&#xD;
+    guid=&quot;_4gCKAOF9Edyp34pwdTOSVQ&quot;>Reunião Sprint Planning&lt;/a>,  aloca-se atividades a menos ou a mais e, nestes casos, o time precisa adicionar ou remover atividades. No Sprint Burndown Chart acima você pode observar que o time alocou atividades a mais inicialmente e ainda tinha, aproximadamente, 600 horas até dia 16/5/02. Neste caso o &lt;a class=&quot;elementLink&quot; href=&quot;./../../Scrum/roles/product_owner_10E7BD3.html&quot;&#xD;
+    guid=&quot;_QcnRMOF5Edyp34pwdTOSVQ&quot;>Product Owner&lt;/a> foi consultado e foi acordada a remoção de algumas atividades do Sprint, o que provocou a grande descida no gráfico entre os dias 16/05/02 (619 horas) e 17/05/02. A partir de então, o time manteve um progresso consistente e finalizou o Sprint com sucesso. &lt;/p>
+
+&lt;p>
+
+    &lt;br />
+
+     
+
+&lt;/p></mainDescription>
+  <purpose>Usado pelo time para dimensionar o quanto o trabalho está indo bem.</purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

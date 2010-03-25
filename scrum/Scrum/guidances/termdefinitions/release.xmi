@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-p9KrleiUF9SffJPa0uU1dA"
+    name="Release,_AIB9gIHrEduFs9jH8xc4xw" guid="-p9KrleiUF9SffJPa0uU1dA" changeDate="2008-07-30T13:30:24.203-0400"
+    version="1.0.0">
+  <mainDescription>&lt;p>Uma Release é a transição de um incremento do produto potencialmente utilizável do time de desenvolvimento para o uso rotineiro dos clientes. &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-xuoAc3dllNfz3v23Uo9T3Q"
+    name=",_4G094ESPEdyDx7cbCULuLg" guid="-xuoAc3dllNfz3v23Uo9T3Q" authors="Lyndon Washington"
+    changeDate="2008-07-30T13:31:45.812-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>&lt;p>O ScrumMaster é o responsável por garantir que o Scrum Team se oriente pelos valores e práticas do Scrum. O ScrumMaster protege o time certificando-se de que os membros não se comprometam com compromissos além dos que eles conseguem cumprir dentro de um Sprint. &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

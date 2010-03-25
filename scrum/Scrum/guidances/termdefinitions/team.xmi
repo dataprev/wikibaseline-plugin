@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-EqhbZ-SkHp61Y2vSUUoCOQ"
+    name="new_term_definition,_vZ3Q8ESTEdyDx7cbCULuLg" guid="-EqhbZ-SkHp61Y2vSUUoCOQ"
+    authors="Lyndon Washington" changeDate="2007-08-06T23:13:21.867-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>O Scrum Team é um grupo multifuncional com de 5 a 9 pessoas que se comprometem a fornecer incrementos de funcionalidade do produto com elevado valor para os clientes em cada Sprint. O Scrum Team define o seu próprio destino, uma vez que estão habilitados a organizar-se para ter certeza de que todo o trabalho está concluído.&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

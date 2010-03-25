@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-3AgWsgStwa4K2S5b_pS3jA"
+    name="new_template,_OO6A0F8rEd22Gu98eFOlrQ" guid="-3AgWsgStwa4K2S5b_pS3jA" changeDate="2008-08-14T13:46:44.318-0400">
+  <mainDescription>&lt;p>Se você estiver considerando o uso de uma planilha para acompanhar o Project Backlog e o Project Burndown considere estes dois modelos gentilmente fornecidos por Clay Ver Valen e Petri Heiramo. Ambos os Templates são excelentes e, com certeza, um poderá ser usado em seu projeto. O Template de Petri usa macros que proporcionam uma rica funcionalidade, mas pode ser um impedimento para alguns. O Template de Petri contém uma amostra de dados, enquanto o de Clay fornece um exemplo em separado. &lt;/p></mainDescription>
+  <attachments>resources/Burndown_Template_Clay.xls|resources/Burndown_Template_Petri.xls|resources/Burndown_Sample_Clay.xls</attachments>
+</org.eclipse.epf.uma:GuidanceDescription>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-thr-EbJ0MVoSOjB07oOFhg"
+    name=",_VqapgESOEdyDx7cbCULuLg" guid="-thr-EbJ0MVoSOjB07oOFhg" authors="Lyndon Washington"
+    changeDate="2008-07-30T13:02:09.812-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>&lt;p>Os impedimentos são quaisquer obstáculos ou dificuldades que a equipe encontra e que dificultam a sua capacidade de trabalho nas suas tarefas no Sprint. Os impedimentos não são descobertos durante a reunião Daily Scrum. O Scrum Master é responsável por garantir que os impedimentos sejam resolvidos. &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

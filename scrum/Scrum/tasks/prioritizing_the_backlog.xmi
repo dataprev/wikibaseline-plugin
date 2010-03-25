@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-_17L09AWhCtpcfaV1O_oIA"
+    name=",_btIuEF8LEd22Gu98eFOlrQ" guid="-_17L09AWhCtpcfaV1O_oIA" changeDate="2008-07-31T10:34:21.500-0400">
+  <mainDescription>&lt;p>O Product Backlog é uma lista priorizada de trabalhos a serem concluídos pelo time. É continuamente, atualizada pelo Product Owner que se baseia no feedback vindo do usuário final (à medida em que são expostos a novos incrementos de produtos) e, também, em resposta às evoluções técnicas e cenários de negócios &lt;/p>
+
+&lt;p>É importante que o time abasteça o Product Owner com tamanhos estimados para os itens de Product Backlog para, permitir ao Product Owner balancear as necessidades do negócio com as estimativas de custo para implementação. &lt;/p></mainDescription>
+  <purpose>&lt;p>Para garantir que o time construa o produto correto. &lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

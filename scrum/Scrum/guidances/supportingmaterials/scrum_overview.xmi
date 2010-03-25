@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-B-d2Wl0Vyk_-I-RwtKzhKQ"
+    name="new_supporting_material,_lC260PVhEdyMdecrgpMbRg" guid="-B-d2Wl0Vyk_-I-RwtKzhKQ"
+    changeDate="2008-03-18T23:08:42.078-0400">
+  <copyrightStatement href="uma://_6Ab_EOF4Edyp34pwdTOSVQ#_4kVeYOGBEdyp34pwdTOSVQ"/>
+  <mainDescription>&lt;p>No Scrum, os projetos acontecem em uma série de iterações, com um mês de duração, chamadas &lt;em>Sprints&lt;/em>. &lt;/p>
+
+&lt;p>Scrum é ideal para projetos cujos requisitos mudam rapidamente ou são altamente emergentes. O trabalho a ser feito em um projeto Scrum é registrado nas Pendências do Produto (Product Backlog), que é uma lista de todos os desejos de mudança no produto. No inicio de cada incremento é feita uma Reunião de Planejamento de Incremento (Sprint Planning Meeting) na qual o Dono do Produto (Product Owner) prioriza as Pendências do Produto (Product Backlog), e a Equipe Scrum (Scrum Team) seleciona as tarefas que ela pode completar durante o próximo Incremento. Essas tarefas são então movidas das Pendências do Produto para as Pendências do Incremento. &lt;/p>
+
+&lt;p>Durante um incremento, são conduzidas curtas reuniões diárias chamadas de Scrum Diário (Daily Scrum), que ajudam a equipe a manter-se no rumo. &lt;/p>
+
+&lt;p>Ao final de cada incremento a equipe demonstra a funcionalidade concluída, na Reunião de Revisão do Incremento (Sprint Review Meeting). &lt;/p>
+
+&lt;p>Graficamente, Scrum se parece tal como:&lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../../Scrum/tasks/the_daily_scrum_C8FB7908.html&quot; guid=&quot;_oSM0AOF-Edyp34pwdTOSVQ&quot;>O Daily Scrum&lt;/a> &lt;/p>
+
+&lt;p>
+
+    &lt;img height=&quot;371&quot; alt=&quot;Scrum Overview&quot; src=&quot;./resources/ScrumLargeLabelled.png&quot; width=&quot;799&quot; usemap=&quot;#map&quot; /> &lt;map&#xD;
+    id=&quot;Map&quot; name=&quot;Map&quot;>
+
+        &lt;area shape=&quot;rect&quot; coords=&quot;62,96,168,174&quot; href=&quot;./../../../Scrum/workproducts/product_backlog_68345C16.html&quot;&#xD;
+        guid=&quot;_OZIPIOF8Edyp34pwdTOSVQ&quot; />
+
+        &lt;area shape=&quot;rect&quot; coords=&quot;212,95,319,175&quot; href=&quot;./../../../Scrum/workproducts/sprint_backlog_7A5B8A37.html&quot;&#xD;
+        guid=&quot;_Q5Ki8OF8Edyp34pwdTOSVQ&quot; />
+
+        &lt;area shape=&quot;rect&quot; coords=&quot;234,-2,362,69&quot; href=&quot;./../../../Scrum/tasks/the_daily_scrum_C8FB7908.html&quot;&#xD;
+        guid=&quot;_oSM0AOF-Edyp34pwdTOSVQ&quot; />
+
+        &lt;area shape=&quot;rect&quot; coords=&quot;607,73,756,196&quot;&#xD;
+        href=&quot;./../../../Scrum/workproducts/potentially_shippable_product_incremement_69E6418C.html&quot;&#xD;
+        guid=&quot;__uNYkPVgEdyMdecrgpMbRg&quot; />
+
+    &lt;/map>
+
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

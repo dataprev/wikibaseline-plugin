@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-wYUGztUXJo-IFJmZFHndZA"
+    name="new_term_definition,_ADwNoESPEdyDx7cbCULuLg" guid="-wYUGztUXJo-IFJmZFHndZA"
+    authors="Lyndon Washington" changeDate="2008-07-30T13:20:41.562-0400" changeDescription="Initial revision"
+    version="0.1">
+  <mainDescription>&lt;p>Um item do Product Backlog é uma unidade de trabalho suficientemente pequena para ser concluída por uma equipe em uma iteração Sprint. Os itens de Backlog são decompostos em uma ou mais tarefas.&lt;br /> &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

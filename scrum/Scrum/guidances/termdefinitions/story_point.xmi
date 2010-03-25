@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-TiV3gmeEcaJC9fHWazqHLA"
+    name="story_point_def,_CI6VAO6oEduaarO4hBWeSg" guid="-TiV3gmeEcaJC9fHWazqHLA"
+    changeDate="2007-04-20T14:56:28.842-0400">
+  <mainDescription>Os Story Points são uma medição empregada para indicar o esforço necessário para implementar uma estória de usuário, ou uma característica do Product Backlog.&lt;br /> &lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

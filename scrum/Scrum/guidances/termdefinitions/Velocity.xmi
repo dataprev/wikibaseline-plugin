@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-_YSdL-PCrHetsPuFPMuZvA"
+    name="new_term_definition,_HQEP8ILXEduLd8CaF_IcMA" guid="-_YSdL-PCrHetsPuFPMuZvA"
+    changeDate="2007-08-09T20:21:56.901-0400" version="1.0.0">
+  <mainDescription>A velocidade é uma métrica que indica a taxa de entrega para um time. A velocidade de um time mostra quantos pontos de estória eles são capazes de converter em incrementos de produto potencialmente utilizável em cada Sprint.</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

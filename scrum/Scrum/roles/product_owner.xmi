@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.4/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.2.0" xmi:id="--OmeeCdOSH1ki1_i9TN0kg"
+    name="Product Owner,_QcnRMOF5Edyp34pwdTOSVQ" guid="--OmeeCdOSH1ki1_i9TN0kg" changeDate="2008-03-11T17:32:26.593-0400">
+  <copyrightStatement href="uma://_6Ab_EOF4Edyp34pwdTOSVQ#_4kVeYOGBEdyp34pwdTOSVQ"/>
+  <mainDescription>&lt;p>O Product Owner tem as seguintes responsabilidades: &lt;/p>
+
+&lt;ul class=&quot;noindent&quot;>
+
+    &lt;li>Definir as funcionalidades do produto; &lt;/li>
+
+    &lt;li>Decidir a data de liberação e conteúdo do Release; &lt;/li>
+
+    &lt;li>Responder pela rentabilidade do produto (ROI); &lt;/li>
+
+    &lt;li>Priorizar as funcionalidades de acordo com o valor de mercado; &lt;/li>
+
+    &lt;li>Ajustar funcionalidades e prioridades a cada 30 dias, conforme necessário; e &lt;/li>
+
+    &lt;li>Aceitar ou Rejeitar os resultados de trabalho. &lt;/li>
+
+&lt;/ul>
+
+&lt;p>O Product Owner é responsável pela primeira das três formalidades do Scrum: Sprint Planning. &lt;/p>
+
+&lt;p>O Scrum Team analisa a priorização dos itens do Product Backlog, refina os itens a partir da prioridade e se compromete a finalizá-los durante o Sprint. Esses itens tornam-se parte do Sprint Backlog. &lt;/p>
+
+&lt;p>Em retribuição ao comprometimento do Scrum Team em completar/finalizar as tarefas selecionadas, o Product Owner se compromete que, ele ou ela, não imporá novos requisitos ao time durante o Sprint. É permitido alterar os requisitos, mas apenas fora do Sprint. Uma vez que o time inicie o Sprint, deve-se buscar atingir o Sprint Goal de forma "paranoica". &lt;/p></mainDescription>
+  <assignmentApproaches>&lt;ul>
+
+    &lt;li>Uma única pessoa dedicada ao projeto - deve estar disponível para responder às dúvidas do time &lt;/li>
+
+    &lt;li>Um membro extra do time que participa das reuniões de Sprint Planning e Sprint Review &lt;/li>
+
+    &lt;li>Tipicamente, alguém do Marketing ou um usuário chave em desenvolvimentos internos &lt;/li>
+
+    &lt;li>Pode ser um representante do cliente ou um procurador do cliente &lt;/li>
+
+&lt;/ul></assignmentApproaches>
+</org.eclipse.epf.uma:RoleDescription>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-HIv84TcqJsq4hsPh7HjCYw"
+    name="new_term_definition,_kftWoIHqEduFs9jH8xc4xw" guid="-HIv84TcqJsq4hsPh7HjCYw"
+    changeDate="2008-07-30T13:33:13.484-0400" version="1.0.0">
+  <mainDescription>&lt;p>Uma sequencia de atividades com prazo definido, durante a qual um incremento na funcionalidade do produto é implementada. &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

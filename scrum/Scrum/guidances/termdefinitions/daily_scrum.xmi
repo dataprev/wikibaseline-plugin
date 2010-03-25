@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-qw1zzcdgS16heKCPSMtXNA"
+    name="new_term_definition,_wzGykF5YEd22Gu98eFOlrQ" guid="-qw1zzcdgS16heKCPSMtXNA"
+    changeDate="2008-07-30T13:00:08.468-0400">
+  <mainDescription>&lt;p>O Daily Scrum (também conhecido como Daily Stand-up) é uma reunião rápida (15-30 minutos) com a participação de todos os membros de Scrum Team e facilitada pela Scrum Master. O Daily Scrum não é uma reunião de status, é um comprometimento entre os pares. Durante a reunião Daily Scrum, cada membro da equipe responde às seguintes perguntas: &lt;/p>
+
+&lt;ol>
+
+    &lt;li>O que você fez ontem? &lt;/li>
+
+    &lt;li>O que você vai fazer hoje? &lt;/li>
+
+    &lt;li>Existe algum impedimento? &lt;/li>
+
+&lt;/ol></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:GuidanceDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.4/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.2.0" xmi:id="-rfXDg30uLSggSmzHYCYVlg"
+    name="example_product_backlog,_t2djoPVPEdyMdecrgpMbRg" guid="-rfXDg30uLSggSmzHYCYVlg"
+    changeDate="2008-03-18T21:01:50.140-0400">
+  <mainDescription>&lt;img height=&quot;482&quot; alt=&quot;Example product backlog&quot; src=&quot;resources/productbacklog.jpg&quot; width=&quot;500&quot; align=&quot;middle&quot; /></mainDescription>
+</org.eclipse.epf.uma:GuidanceDescription>

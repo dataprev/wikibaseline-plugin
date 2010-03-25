@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-sKs1c_RcKx_VoP3H4546-w"
+    name="new_term_definition,_7frQsF5dEd22Gu98eFOlrQ" guid="-sKs1c_RcKx_VoP3H4546-w"
+    changeDate="2008-07-30T13:37:02.890-0400">
+  <mainDescription>&lt;p>O Product Burndown Chart é uma "grande figura" para ver o progresso do time. Ele mostra quanto trabalho ainda resta no início de cada Sprint. O escopo deste gráfico inclui as Releases, entretanto, um Release Burndown Chart é limitado a uma única Release. &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

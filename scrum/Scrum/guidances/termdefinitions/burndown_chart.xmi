@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-DbU1fL11htQSZHU3Epp8DQ"
+    name="new_term_definition,_X5rREILYEduLd8CaF_IcMA" guid="-DbU1fL11htQSZHU3Epp8DQ"
+    changeDate="2008-07-30T13:07:14.093-0400" version="1.0.0">
+  <mainDescription>&lt;p>Gráfico do restante de trabalho a ser feito representado como uma função do tempo restante. O eixo Y demonstra o trabalho restante e o eixo X o tempo. Os tipos de Burndown Chart são: &lt;/p>
+
+&lt;ul>
+
+    &lt;li>
+
+        &lt;a class=&quot;elementLink&quot; href=&quot;./../../../Scrum/guidances/termdefinitions/sprint_burndown_chart_43F98B6B.html&quot;&#xD;
+        guid=&quot;_veyn215UEd22Gu98eFOlrQ&quot;>Sprint Burndown Chart&lt;/a>
+
+    &lt;/li>
+
+    &lt;li>
+
+        &lt;a class=&quot;elementLink&quot; href=&quot;./../../../Scrum/guidances/termdefinitions/product_burndown_chart_5EC47E18.html&quot;&#xD;
+        guid=&quot;_7frQsF5dEd22Gu98eFOlrQ&quot;>Product Burndown Chart&lt;/a>&lt;a class=&quot;elementLink&quot;&#xD;
+        href=&quot;./../../../Scrum/guidances/termdefinitions/product_burndown_chart_5EC47E18.html&quot;&#xD;
+        guid=&quot;_7frQsF5dEd22Gu98eFOlrQ&quot;>Product Burndown Chart&lt;/a>
+
+    &lt;/li>
+
+    &lt;li>
+
+        &lt;a class=&quot;elementLink&quot; href=&quot;./../../../Scrum/guidances/termdefinitions/release_burndown_chart_6CFAC6EC.html&quot;&#xD;
+        guid=&quot;_YCtMUF5eEd22Gu98eFOlrQ&quot;>Release Burndown Chart&lt;/a>
+
+    &lt;/li>
+
+&lt;/ul></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

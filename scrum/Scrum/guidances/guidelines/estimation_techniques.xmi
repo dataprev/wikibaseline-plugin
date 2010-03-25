@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.5/uma.ecore"
+    xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.0" xmi:id="-eyjJa_TnruHlbgFfOCM5Jg"
+    name="estimating_the_backlog,_L1t78F5nEd22Gu98eFOlrQ" guid="-eyjJa_TnruHlbgFfOCM5Jg"
+    changeDate="2008-07-31T09:25:11.593-0400">
+  <mainDescription>&lt;p>Scrum não descreve técnicas específicas de estimativa. &lt;/p>
+
+&lt;p>A estimativa pela analogia é uma técnica utilizada por Scrum Times. O mecanismo é muito simples e consiste em comparar itens do Product Backlog similares a outros itens do Product Backlog que já tenham sido implementados. A falta de dados limitará a eficácia desta técnica. &lt;/p>
+
+&lt;p>Planning Poker é uma abordagem iterativa popular de estimativa.  Os passos são: &lt;/p>
+
+&lt;ul>
+
+    &lt;li>Um baralho é dado a cada membro do time e cada carta tem um valor de estimativa válido &lt;/li>
+
+    &lt;li>O Product Owner lê uma estória e esta é discutida rapidamente &lt;/li>
+
+    &lt;li>Cada membro do time escolhe uma carta representando sua estimativa &lt;/li>
+
+    &lt;li>As cartas são abertas para que todos possam vê-las &lt;/li>
+
+    &lt;li>As diferenças das estimativas são discutidas (especialmente os valores discrepantes) &lt;/li>
+
+    &lt;li>Faz-se re-estimativas até que haja consenso &lt;/li>
+
+&lt;/ul>&lt;br />
+
+&lt;p>As cartas de Planning Poker e uma &lt;a href=&quot;http://www.planningpoker.com/&quot;>versão online de Planning Poker&lt;/a> estão disponíveis em &lt;a href=&quot;http://www.mountaingoatsoftware.com//&quot;>Mountain Goat Software&lt;/a> &lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

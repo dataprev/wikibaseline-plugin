@@ -1,0 +1,4 @@
+
+        [trac.plugins]
+        wikibaseline = wikibaseline
+    

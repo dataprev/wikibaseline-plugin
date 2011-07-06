@@ -1,8 +1,0 @@
-setup.py
-TracWikiBaseline.egg-info/PKG-INFO
-TracWikiBaseline.egg-info/SOURCES.txt
-TracWikiBaseline.egg-info/dependency_links.txt
-TracWikiBaseline.egg-info/entry_points.txt
-TracWikiBaseline.egg-info/top_level.txt
-wikibaseline/__init__.py
-wikibaseline/wikibaseline.py

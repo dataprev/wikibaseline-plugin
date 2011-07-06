@@ -1,6 +1,7 @@
 
 import os
 import sys
+#import d
 
 comd1 = "python setup.py bdist_egg"
 comd2 = "cp /home/guilherme/udsl/wikibaseline/wikibaseline-plugin/dist/Baseline-1.1-py2.7.egg /home/guilherme/pTrac/plugins/"

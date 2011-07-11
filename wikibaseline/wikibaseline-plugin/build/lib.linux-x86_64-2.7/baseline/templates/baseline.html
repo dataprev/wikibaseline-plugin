@@ -8,35 +8,55 @@
   <head>
     <title>Baseline</title>
   </head>
-
   <body>
+	<script language="JavaScript">	
+		function inserir(){
+			document.getElementById('campo').value = "1";				
+		}	
+	</script>
     <div id="ctxtnav" class="nav"></div>
 
     <div id="content" class="helloworld">
 		<h1>Baseline</h1>	
-		<form method="POST">
+		<form method="GET">
 			<table border="0">
-				<tr>				
+				<tr>									
 					<td>Nome:</td>
-					<td><input name="nm_baseline" size="30px"/></td>
-					<td><input type="submit" value="Enviar"/></td>					
+					<td><input name="nm_baseline" size="30px"/></td>																				
+					<td><input type="hidden" name="campo" id="campo"/></td>
+					<td><input type="submit" value="Enviar" onclick="inserir()"/></td>								
 				</tr>											
-			</table>	
-		</form>				
+			</table>						
 		<table border="0"  cellpadding="10px">
 			<tr>
 				<td></td>
     			<td>Nome</td>    			
     			<td>Versão</td>
-    		</tr>
+    		</tr>    		
   			<py:for each="item in teste">
     			<tr>
-    				<td><input type="checkbox"/></td>					
+    				<td><input type="checkbox" name="checkbase" value="${item[0]}+${item[1]}"/></td>					
     				<td><a href="wiki/${item[0]}?version=${item[1]}">${item[0]}</a></td>    				    				
+    				<td>${item[2]}</td>
     				<td>${item[1]}</td>
+						<!-- 
+						<select name="version">
+							<py:for each="x in range(item[1])">
+								<option>${x+1}</option>
+							</py:for>					
+						</select>
+						 -->    				    				
     			</tr>
-  			</py:for>
-  		</table>								
+  			</py:for>  			
+  		</table>
+  		<table border="1">
+  		<tr>
+  		<py:for each="itens in check">
+  			<td>${itens}</td>
+  		</py:for>
+  		</tr>
+  		</table> 
+  		</form>					  		  		  				
     </div>
   </body>
 </html>

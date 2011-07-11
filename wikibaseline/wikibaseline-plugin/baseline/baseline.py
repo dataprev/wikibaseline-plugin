@@ -7,6 +7,7 @@ from trac.core import *
 from trac.web import IRequestHandler
 from trac.web.chrome import INavigationContributor, ITemplateProvider, add_stylesheet
 from model import Baseline
+from trac.wiki.model import *
 
 class BaselineModule(Component):
     implements(INavigationContributor, ITemplateProvider, IRequestHandler)
@@ -23,15 +24,31 @@ class BaselineModule(Component):
         return re.match(r'/baseline(?:_trac)?(?:/.*)?$', req.path_info)
 
     def process_request(self, req):
-        data = {}
+        data = {}  
+        data["tes"] = ""      
         nome = req.args.get("nm_baseline")
-        dt = req.args.get("dt_baseline")
-        add_stylesheet(req, 'hw/css/baseline.css')
-        model = Baseline(self.env,nome,dt) 
-        data["teste"] = model.create()
+        op = req.args.get("campo")
+        check = req.args.get("checkbase")                    
+        if op != "1":            
+            model = Baseline(self.env,nome)                                                     
+            data["teste"] = model.popularBaseline()                 
+        else:        
+            model = Baseline(self.env,nome)                                                     
+            if model.inserirBaseline():
+                data["info"] = "Cadastro efetuado com sucesso!"
+            else:
+                data["info"] = "Nao foi possivel efetuar cadastro!"
+          #  data["check"] = check
+           # for x in check:
+            #    dados = x.split("+")
+             #   data["tes"] = dados[1]
+            return 'teste.html', data, None
+        
+        
         # This tuple is for Genshi (template_name, data, content_type)
         # Without data the trac layout will not appear.                
-        return 'baseline.html', data, None
+        add_stylesheet(req, 'hw/css/baseline.css')
+        return 'baseline.html', data, None        
      
     def get_templates_dirs(self):
         from pkg_resources import resource_filename

@@ -1,4 +1,5 @@
-class Baseline(object):
+#from trac import Component
+class Baseline():
 
     def __init__(self,env = None,nome = None,dt = None):
         self.env = env
@@ -6,12 +7,23 @@ class Baseline(object):
         self.nome = nome
         self.dt = dt
 
-    def create(self):
+    def popularBaseline(self):
         try:
             cursor = self.db.cursor()
-            cursor.execute("SELECT name,version FROM wiki WHERE author<>'trac' ORDER BY name,version;")
+            cursor.execute("SELECT DISTINCT name, MAX(version), author FROM wiki WHERE author<>'trac' GROUP BY name,author;")
             resultset = cursor.fetchall()
             #cursor.execute(sql,(self.id, self.name))
-            return resultset
+            return resultset    
         except:
             return "Deu errado!"
+    
+    def inserirBaseline(self):
+        sql = "INSERT INTO baseline (nome) VALUES ('%s');" %self.nome    
+
+        try:
+            cursor = self.db.cursor()
+            cursor.execute(sql)
+            self.db.commit()                                        
+            return 1
+        except:
+            return 0

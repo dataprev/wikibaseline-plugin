@@ -17,14 +17,14 @@
     <div id="ctxtnav" class="nav"></div>
 
     <div id="content" class="helloworld">
-		<h1>Baseline</h1>	
+		<h1>Baseline</h1>		
 		<form method="GET">
 			<table border="0">
 				<tr>									
 					<td>Nome:</td>
-					<td><input name="nm_baseline" size="30px"/></td>																				
 					<td><input type="hidden" name="campo" id="campo"/></td>
-					<td><input type="submit" value="Enviar" onclick="inserir()"/></td>								
+					<td><input name="nm_baseline" size="30px"/></td>																									
+													
 				</tr>											
 			</table>						
 		<table border="0"  cellpadding="10px">
@@ -47,15 +47,17 @@
 						</select>
 						 -->    				    				
     			</tr>
-  			</py:for>  			
+  			</py:for>  			  			  		
   		</table>
-  		<table border="1">
+  		<table border="0">
   		<tr>
-  		<py:for each="itens in check">
-  			<td>${itens}</td>
-  		</py:for>
+  			<td>Comentarios</td>	
   		</tr>
-  		</table> 
+  		<tr>
+  			<td><textarea rows="10" cols="80" name="comentario" id="comentario"></textarea></td>	
+  		</tr>
+  		</table>
+  		<input type="submit" value="Enviar" onclick="inserir()"/> 
   		</form>					  		  		  				
     </div>
   </body>

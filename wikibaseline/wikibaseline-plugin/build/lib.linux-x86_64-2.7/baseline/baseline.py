@@ -10,35 +10,44 @@ from model import Baseline
 from model import itemBaseline
 from trac.wiki.model import *
 from datetime import datetime
+from trac.perm import IPermissionRequestor
 
 class BaselineModule(Component):
-    implements(INavigationContributor, ITemplateProvider, IRequestHandler)
+    implements(INavigationContributor, ITemplateProvider, IRequestHandler, IPermissionRequestor)
 
     def get_active_navigation_item(self, req):
         return 'baseline'
 
     def get_navigation_items(self, req):
-        yield ('mainnav', 'baseline',
-               tag.a('Baseline', href=req.href.baseline()))
+        if 'WIKI_BASELINE' in req.perm('wiki'):
+            yield ('mainnav', 'baseline', tag.a('Baseline', href=req.href.baseline()))
     
     def match_request(self, req):
         return re.match(r'/baseline(?:_trac)?(?:/.*)?$', req.path_info)
-
-    def process_request(self, req):
+    
+    def get_permission_actions(self):        
+        return ['WIKI_BASELINE']
+           
+    def process_request(self, req):        
         data = {}          
         nome = req.args.get("nm_baseline")
         op = req.args.get("campo")
-        check = req.args.get("checkbase")
-        comentario = req.args.get("comentario")        
-        autor = "Guilherme"                            
+        check = req.args.get("checkbase") 
+        comentario = req.args.get("comentario")                
+        autor = req.authname                                    
+        
         if op != "1":            
             model = Baseline(self.env)                                                     
             data["teste"] = model.popularBaseline()                         
+            #teste
+        
         else:        
             model = Baseline(self.env,nome,datetime.today(),comentario,autor)                                                     
+            
             if model.inserirBaseline():
                 data["info"] = "Cadastro efetuado com sucesso!"
                 id = model.getBaselineByName(nome)
+                
                 for x in check:
                     dados = x.split("+")
                     itemBase = itemBaseline(self.env,id[0][0],dados[0],dados[1])

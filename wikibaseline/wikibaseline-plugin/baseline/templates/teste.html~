@@ -13,9 +13,8 @@
     <div id="ctxtnav" class="nav"></div>
 
     <div id="content" class="helloworld">
-      <h1>Gestão de Baselines</h1>
-		<label for="nm_baseline">Baseline Id:</label><input name="nm_baseline" type="text" />
-		<input type="submit" value="Nova baseline" />
+		<h1>Baseline</h1>	
+		Teste!							
     </div>
   </body>
 </html>

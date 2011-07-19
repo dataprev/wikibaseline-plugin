@@ -7,31 +7,61 @@ from trac.core import *
 from trac.web import IRequestHandler
 from trac.web.chrome import INavigationContributor, ITemplateProvider, add_stylesheet
 from model import Baseline
+from model import itemBaseline
+from trac.wiki.model import *
+from datetime import datetime
+from trac.perm import IPermissionRequestor
 
 class BaselineModule(Component):
-    implements(INavigationContributor, ITemplateProvider, IRequestHandler)
+    implements(INavigationContributor, ITemplateProvider, IRequestHandler, IPermissionRequestor)
 
     def get_active_navigation_item(self, req):
         return 'baseline'
 
     def get_navigation_items(self, req):
-        yield ('mainnav', 'baseline',
-               tag.a('Baseline', href=req.href.baseline()))
-
-
+        if 'WIKI_BASELINE' in req.perm('wiki'):
+            yield ('mainnav', 'baseline', tag.a('Baseline', href=req.href.baseline()))
+    
     def match_request(self, req):
         return re.match(r'/baseline(?:_trac)?(?:/.*)?$', req.path_info)
-
-    def process_request(self, req):
-        data = {}
+    
+    def get_permission_actions(self):        
+        return ['WIKI_BASELINE']
+           
+    def process_request(self, req):        
+        data = {}          
         nome = req.args.get("nm_baseline")
-        dt = req.args.get("dt_baseline")
-        add_stylesheet(req, 'hw/css/baseline.css')
-        model = Baseline(self.env,nome,dt) 
-        data["teste"] = model.create()
+        op = req.args.get("campo")
+        check = req.args.get("checkbase") 
+        comentario = req.args.get("comentario")                
+        autor = req.authname                                    
+        
+        if op != "1":            
+            model = Baseline(self.env)                                                     
+            data["teste"] = model.popularBaseline()                         
+            #teste
+        
+        else:        
+            model = Baseline(self.env,nome,datetime.today(),comentario,autor)                                                     
+            
+            if model.inserirBaseline():
+                data["info"] = "Cadastro efetuado com sucesso!"
+                id = model.getBaselineByName(nome)
+                
+                for x in check:
+                    dados = x.split("+")
+                    itemBase = itemBaseline(self.env,id[0][0],dados[0],dados[1])
+                    itemBase.inserirItemBaseline()           
+            else:
+                data["info"] = "Nao foi possivel efetuar cadastro!"          
+            
+            return 'teste.html', data, None
+        
+        
         # This tuple is for Genshi (template_name, data, content_type)
         # Without data the trac layout will not appear.                
-        return 'baseline.html', data, None
+        add_stylesheet(req, 'hw/css/baseline.css')
+        return 'baseline.html', data, None        
      
     def get_templates_dirs(self):
         from pkg_resources import resource_filename

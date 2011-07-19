@@ -12,6 +12,16 @@ class Baseline():
     def popularBaseline(self):
         try:
             cursor = self.db.cursor()
+            cursor.execute("SELECT id,nome,data,autor FROM baseline ORDER BY nome;")
+            resultset = cursor.fetchall()
+            #cursor.execute(sql,(self.id, self.name))
+            return resultset    
+        except:
+            return "Deu errado!"
+    
+    def popularWikiPages(self):
+        try:
+            cursor = self.db.cursor()
             cursor.execute("SELECT DISTINCT name, MAX(version), author FROM wiki GROUP BY name,author;")
             resultset = cursor.fetchall()
             #cursor.execute(sql,(self.id, self.name))
@@ -41,7 +51,8 @@ class Baseline():
         except:
             return 0
 
-class itemBaseline():
+class ItemBaseline(object):
+        
     
     def __init__(self,env = None,baseline_id = None, wiki_nome = None, wiki_versao = None):
         self.env = env
@@ -59,3 +70,14 @@ class itemBaseline():
             return 1
         except:
             return 0
+        
+    def popularItemBaselineByBaselineId(self):        
+        sql = "SELECT * FROM itembaseline where baseline_id = %s;" %self.baseline_id    
+        try:
+            cursor = self.db.cursor()
+            cursor.execute(sql)
+            resultset = cursor.fetchall()            
+            return resultset    
+        except:
+            return "Deu errado!"
+        

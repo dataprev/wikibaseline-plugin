@@ -21,43 +21,26 @@
 		<form method="GET">
 			<table border="0">
 				<tr>									
-					<td>Nome:</td>
-					<td><input type="hidden" name="campo" id="campo"/></td>
-					<td><input name="nm_baseline" size="30px"/></td>																									
-													
+					<td>Nome:</td>					
+					<td><input name="nm_baseline" size="30px"/></td>																																					
 				</tr>											
-			</table>						
+			</table>								
 		<table border="0"  cellpadding="10px">
 			<tr>
 				<td></td>
     			<td>Nome</td>    			
-    			<td>Versão</td>
+    			<td>Data</td>
+    			<td>Autor</td>
     		</tr>    		
-  			<py:for each="item in teste">
+  			<py:for each="item in dados">
     			<tr>
-    				<td><input type="checkbox" name="checkbase" value="${item[0]}+${item[1]}"/></td>					
-    				<td><a href="wiki/${item[0]}?version=${item[1]}">${item[0]}</a></td>    				    				
+    				<td><input type="checkbox" name="checkbase" value="${item[0]}+"/></td>					
+    				<td><a href="baseline/view?baselineId=${item[0]}">${item[1]}</a></td>    				    				
     				<td>${item[2]}</td>
-    				<td>${item[1]}</td>
-						<!-- 
-						<select name="version">
-							<py:for each="x in range(item[1])">
-								<option>${x+1}</option>
-							</py:for>					
-						</select>
-						 -->    				    				
+    				<td>${item[3]}</td>						    				    			
     			</tr>
   			</py:for>  			  			  		
-  		</table>
-  		<table border="0">
-  		<tr>
-  			<td>Comentarios</td>	
-  		</tr>
-  		<tr>
-  			<td><textarea rows="10" cols="80" name="comentario" id="comentario"></textarea></td>	
-  		</tr>
-  		</table>
-  		<input type="submit" value="Enviar" onclick="inserir()"/> 
+  		</table>  		
   		</form>					  		  		  				
     </div>
   </body>

@@ -12,7 +12,7 @@ class Baseline():
     def popularBaseline(self):
         try:
             cursor = self.db.cursor()
-            cursor.execute("SELECT DISTINCT name, MAX(version), author FROM wiki WHERE author<>'trac' GROUP BY name,author;")
+            cursor.execute("SELECT DISTINCT name, MAX(version), author FROM wiki GROUP BY name,author;")
             resultset = cursor.fetchall()
             #cursor.execute(sql,(self.id, self.name))
             return resultset    

@@ -18,22 +18,25 @@ class BaselineModule(Component):
 	def get_active_navigation_item(self, req):
 		return 'baseline'
 
-	def get_navigation_items(self, req):
-		if 'WIKI_BASELINE' in req.perm('wiki'):
+	def get_navigation_items(self, req):		
+		if 'BASELINE_VIEW' in req.perm('BASELINE'):
 			yield ('mainnav', 'baseline', tag.a('Baseline', href=req.href.baseline()))
 	
-	def match_request(self, req):
-		return re.match(r'/baseline(?:_trac)?(?:/.*)?$', req.path_info)
+	def match_request(self, req):		
+		if 'BASELINE_VIEW' in req.perm('BASELINE'):					
+			return re.match(r'/baseline(?:_trac)?(?:/.*)?$', req.path_info)
 	
 	def get_permission_actions(self):        
-		return ['WIKI_BASELINE']
+		return ['BASELINE_VIEW']
 	
 	def process_request(self, req):        		       
 		nome = req.args.get("nm_baseline")
 		comando = req.path_info.rsplit("/",1)[1]
 		check = req.args.get("checkbase") 
 		comentario = req.args.get("comentario")
-		baseline_id = req.args.get("baselineId")                
+		baseline_id = req.args.get("baselineId")
+		pes = req.args.get("pesquisa")
+		arg = req.args.get("argumento")                 
 		autor = req.authname		
 		item = ItemBaseline(self.env,baseline_id)                                    	
 		baseline = Baseline(self.env,nome,datetime.today(),comentario,autor)                                                   						 
@@ -47,6 +50,9 @@ class BaselineModule(Component):
 		
 		if comando == "inserindo":
 			return self.inserindoBaseline(baseline,check)
+		
+		if comando == "pesquisar":
+			return self.pesquisarBaseline(baseline,pes,arg)
 		  				
 		return self.listarBaseline(baseline)
 
@@ -65,6 +71,11 @@ class BaselineModule(Component):
 		data["dados"] = baseline.popularWikiPages()
 		return "inserirBaseline.html", data, None
 	
+	def pesquisarBaseline(self,baseline,pes,arg):
+		data={}
+		data["dados"] = baseline.pesquisarBaseline(arg,pes)
+		return "baseline.html", data, None
+		
 	def inserindoBaseline(self,baseline,check):
 		data={}
 		if baseline.inserirBaseline():

@@ -19,6 +19,16 @@ class Baseline():
         except:
             return "Deu errado!"
     
+    def pesquisarBaseline(self,arg,pes):
+        sql = "SELECT id,nome,data,autor FROM baseline where %s LIKE '%s%%';" %(arg,pes) 
+        try:            
+            cursor = self.db.cursor()
+            cursor.execute(sql)
+            resultset = cursor.fetchall()            
+            return resultset    
+        except:
+            return "Deu errado!"
+    
     def popularWikiPages(self):
         try:
             cursor = self.db.cursor()

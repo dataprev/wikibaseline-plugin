@@ -17,12 +17,19 @@
     <div id="ctxtnav" class="nav"></div>
 
     <div id="content" class="helloworld">
-		<h1>Baseline</h1>				
-		<form method="GET">
+		<h1>Baseline</h1>
+		<b>${teste}</b>				
+		<form method="GET" action="baseline/pesquisar">
 			<table border="0">
 				<tr>									
 					<td>Nome:</td>					
-					<td><input name="nm_baseline" size="30px"/></td>
+					<td><input name="pesquisa" size="30px"/></td>
+					<td>
+						<select name="argumento">
+							<option value="nome">Nome</option>
+							<option value="autor">Autor</option>						
+						</select>
+					</td>
 					<td><input type="submit" name="pesquisar" value="Pesquisar" size="30px"/></td>																																					
 				</tr>											
 			</table>								

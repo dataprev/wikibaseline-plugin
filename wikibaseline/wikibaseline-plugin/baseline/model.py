@@ -29,10 +29,10 @@ class Baseline():
         except:
             return "Deu errado!"
     
-    def getBaselineByName(self,nome):
+    def getBaselineByName(self):
         try:
             cursor = self.db.cursor()
-            sql = "SELECT id FROM baseline WHERE nome = '%s';" %nome
+            sql = "SELECT id FROM baseline WHERE nome = '%s';" %self.nome
             cursor.execute(sql)
             resultset = cursor.fetchall()
             #cursor.execute(sql,(self.id, self.name))
@@ -72,7 +72,7 @@ class ItemBaseline(object):
             return 0
         
     def popularItemBaselineByBaselineId(self):        
-        sql = "SELECT * FROM itembaseline where baseline_id = %s;" %self.baseline_id    
+        sql = "SELECT * FROM itembaseline where baseline_id = '%s';" %self.baseline_id    
         try:
             cursor = self.db.cursor()
             cursor.execute(sql)

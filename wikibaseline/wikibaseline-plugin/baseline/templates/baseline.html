@@ -22,9 +22,11 @@
 			<table border="0">
 				<tr>									
 					<td>Nome:</td>					
-					<td><input name="nm_baseline" size="30px"/></td>																																					
+					<td><input name="nm_baseline" size="30px"/></td>
+					<td><input type="submit" name="pesquisar" value="Pesquisar" size="30px"/></td>																																					
 				</tr>											
 			</table>								
+		</form>
 		<table border="0"  cellpadding="10px">
 			<tr>
 				<td></td>
@@ -35,13 +37,13 @@
   			<py:for each="item in dados">
     			<tr>
     				<td><input type="checkbox" name="checkbase" value="${item[0]}+"/></td>					
-    				<td><a href="baseline/view?baselineId=${item[0]}">${item[1]}</a></td>    				    				
+    				<td><a href="baseline/view?baselineId=${item[0]}">${item[1]}</a></td>    				    				    			
     				<td>${item[2]}</td>
     				<td>${item[3]}</td>						    				    			
     			</tr>
   			</py:for>  			  			  		
-  		</table>  		
-  		</form>					  		  		  				
+  		</table>  		  		
+  		<a href="baseline/insert">Nova Baseline</a>					  		  		  				
     </div>
   </body>
 </html>

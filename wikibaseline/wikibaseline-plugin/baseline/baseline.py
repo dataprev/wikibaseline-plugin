@@ -34,27 +34,50 @@ class BaselineModule(Component):
 		check = req.args.get("checkbase") 
 		comentario = req.args.get("comentario")
 		baseline_id = req.args.get("baselineId")                
-		autor = req.authname
+		autor = req.authname		
 		item = ItemBaseline(self.env,baseline_id)                                    	
-		model = Baseline(self.env,nome,datetime.today(),comentario,autor)                                                     						 
+		baseline = Baseline(self.env,nome,datetime.today(),comentario,autor)                                                   						 
+		add_stylesheet(req, 'hw/css/baseline.css')		
 				
 		if comando == "insert":
-			pass
+			return self.adicionarBaseline(baseline)
 		
 		if comando == "view":
 			return self.visualizarBaseline(item)
-		  		
-		return self.listarBaseline(model)
+		
+		if comando == "inserindo":
+			return self.inserindoBaseline(baseline,check)
+		  				
+		return self.listarBaseline(baseline)
 
-	def listarBaseline(self, model):		
+	def listarBaseline(self, baseline):		
 		data = {}
-		data["dados"] = model.popularBaseline()            
+		data["dados"] = baseline.popularBaseline()            
 		return "baseline.html", data, None
 	
-	def visualizarBaseline(self, model):		
+	def visualizarBaseline(self, item):		
 		data = {}		
-		data["dados"] = model.popularItemBaselineByBaselineId()            
-		return "baseline.html", data, None
+		data["dados"] = item.popularItemBaselineByBaselineId()            
+		return "visualizarBaseline.html", data, None
+	
+	def adicionarBaseline(self,baseline):
+		data={}
+		data["dados"] = baseline.popularWikiPages()
+		return "inserirBaseline.html", data, None
+	
+	def inserindoBaseline(self,baseline,check):
+		data={}
+		if baseline.inserirBaseline():
+			data["info"] = "Cadastro efetuado com sucesso!"
+			id = baseline.getBaselineByName()
+    		
+			for x in check:
+				dados = x.split("+")
+				itemBase = ItemBaseline(self.env,id[0][0],dados[0],dados[1])
+				itemBase.inserirItemBaseline()
+		else:
+			data["info"] = "Nao foi possivel efetuar cadastro!"                  
+		return 'info.html', data, None	
 	
 	def get_templates_dirs(self):
 		from pkg_resources import resource_filename

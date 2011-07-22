@@ -60,13 +60,6 @@ class BaselineProvider(Component):
                             ADD constraint fk_wiki foreign key (wiki_nome, wiki_versao) references wiki (name,version);")
             db.commit()
 
-            # Migrate old data
-            #if self._need_migration(db):
-            #    cursor = db.cursor()
-            #    cursor.execute("INSERT INTO tags (tagspace, name, tag) SELECT "
-            #                   "'wiki', name, namespace FROM wiki_namespace")
-            #    cursor.execute("DROP TABLE wiki_namespace")
-            #    db.commit()
         except:
             db.rollback()
             raise

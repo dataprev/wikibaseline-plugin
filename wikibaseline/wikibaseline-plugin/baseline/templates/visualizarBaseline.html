@@ -31,7 +31,7 @@
   			<py:for each="item in dados">
     			<tr>
     				<!--<td><input type="checkbox" name="checkbase" value="${item[0]}+${item[1]}"/></td>-->					
-    				<td><a href="../wiki/${item[1]}?version=${item[2]}">${item[1]}</a></td>    				    				
+    				<td><a href="${req.href('wiki')}/${item[1]}?version=${item[2]}">${item[1]}</a></td>    				    				
     				<td>${item[2]}</td>    										  				    			
     			</tr>
   			</py:for>  			  			  		

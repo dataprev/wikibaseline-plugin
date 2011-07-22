@@ -19,7 +19,7 @@
     <div id="content" class="helloworld">
 		<h1>Baseline</h1>
 		<b>${teste}</b>				
-		<form method="GET" action="baseline/pesquisar">
+		<form method="GET" action="${req.href('baseline')}/pesquisar">
 			<table border="0">
 				<tr>									
 					<td>Nome:</td>					
@@ -44,13 +44,13 @@
   			<py:for each="item in dados">
     			<tr>
     				<td><input type="checkbox" name="checkbase" value="${item[0]}+"/></td>					
-    				<td><a href="baseline/view?baselineId=${item[0]}">${item[1]}</a></td>    				    				    			
+    				<td><a href="${req.href('baseline')}/view?baselineId=${item[0]}">${item[1]}</a></td>    				    				    			
     				<td>${item[2]}</td>
     				<td>${item[3]}</td>						    				    			
     			</tr>
   			</py:for>  			  			  		
   		</table>  		  		
-  		<a href="baseline/insert">Nova Baseline</a>					  		  		  				
+  		<a href="${req.href('baseline')}/insert">Nova Baseline</a>					  		  		  				
     </div>
   </body>
 </html>

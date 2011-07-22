@@ -17,10 +17,10 @@ class Baseline():
             #cursor.execute(sql,(self.id, self.name))
             return resultset    
         except:
-            return "Deu errado!"
+            return "Deu errados!"
     
     def pesquisarBaseline(self,arg,pes):
-        sql = "SELECT id,nome,data,autor FROM baseline where %s LIKE '%s%%';" %(arg,pes) 
+        sql = "SELECT id,nome,data,autor FROM baseline where %s LIKE $f$%s%%$f$;" %(arg,pes) 
         try:            
             cursor = self.db.cursor()
             cursor.execute(sql)

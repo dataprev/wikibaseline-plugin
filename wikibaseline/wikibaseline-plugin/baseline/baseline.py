@@ -5,7 +5,7 @@ from genshi.builder import tag
 
 from trac.core import *
 from trac.web import IRequestHandler
-from trac.web.chrome import INavigationContributor, ITemplateProvider, add_stylesheet
+from trac.web.chrome import INavigationContributor, ITemplateProvider, add_stylesheet, add_script
 from model import Baseline
 from model import ItemBaseline
 from trac.wiki.model import *
@@ -40,7 +40,10 @@ class BaselineModule(Component):
 		autor = req.authname		
 		item = ItemBaseline(self.env,baseline_id)                                    	
 		baseline = Baseline(self.env,nome,datetime.today(),comentario,autor)                                                   						 
-		add_stylesheet(req, 'hw/css/baseline.css')		
+		add_stylesheet(req, 'hw/css/baseline.css')
+		#add_script(req, 'hw/js/jquery-1.5.2.min.js')
+		add_script(req, 'hw/js/jquery.ausu-autosuggest.min.js')		
+		
 				
 		if comando == "insert":
 			return self.adicionarBaseline(baseline)
@@ -48,7 +51,7 @@ class BaselineModule(Component):
 		if comando == "view":
 			return self.visualizarBaseline(item)
 		
-		if comando == "inserindo":
+		if comando == "inserindo":			
 			return self.inserindoBaseline(baseline,check)
 		
 		if comando == "pesquisar":
@@ -65,10 +68,11 @@ class BaselineModule(Component):
 		data = {}		
 		data["dados"] = item.popularItemBaselineByBaselineId()            
 		return "visualizarBaseline.html", data, None
+		
 	
 	def adicionarBaseline(self,baseline):
 		data={}
-		data["dados"] = baseline.popularWikiPages()
+		data["dados"] = baseline.popularWikiPages()		
 		return "inserirBaseline.html", data, None
 	
 	def pesquisarBaseline(self,baseline,pes,arg):

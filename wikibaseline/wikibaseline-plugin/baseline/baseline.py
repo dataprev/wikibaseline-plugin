@@ -73,7 +73,10 @@ class BaselineModule(Component):
 	
 	def pesquisarBaseline(self,baseline,pes,arg):
 		data={}
-		data["dados"] = baseline.pesquisarBaseline(arg,pes)
+		if arg == "wiki":
+			data["dados"] = baseline.pesquisarBaselineByItemBaseline(pes)
+		else:			
+			data["dados"] = baseline.pesquisarBaseline(arg,pes)
 		return "baseline.html", data, None
 		
 	def inserindoBaseline(self,baseline,check):

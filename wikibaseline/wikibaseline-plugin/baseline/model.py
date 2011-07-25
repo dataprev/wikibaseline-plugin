@@ -29,6 +29,17 @@ class Baseline():
         except:
             return "Deu errado!"
     
+    def pesquisarBaselineByItemBaseline(self,pes):
+        sql = "SELECT baseline.id,baseline.nome,baseline.data,baseline.autor FROM itembaseline INNER JOIN baseline ON (baseline_id = id) WHERE wiki_nome LIKE '%s%%';" %pes
+        try:
+            cursor = self.db.cursor()
+            cursor.execute(sql)
+            resultset = cursor.fetchall()
+            return resultset
+        except:
+            return "Deu errado!"
+	
+
     def popularWikiPages(self):
         try:
             cursor = self.db.cursor()

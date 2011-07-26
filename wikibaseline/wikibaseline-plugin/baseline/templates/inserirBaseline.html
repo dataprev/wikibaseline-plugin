@@ -13,28 +13,32 @@
 	$(document).ready(function() {
 	    $.fn.autosugguest({
 	           className: 'ausu-suggest',
-	          methodType: 'POST',
-	            dataFile: 'teste.html'
+	          methodType: 'get',
+	            minChars: 2,
+	            dataFile: 'json'
 	    });
 	});    
-	</script>
+	</script>	
   </head>
   <body>	
     <div id="ctxtnav" class="nav"></div>
 
     <div id="content" class="helloworld">
 		<h1>Nova Baseline</h1>				
-		<form method="GET" action="inserindo">
-			<div class="ausu-suggest">
-      			<input type="text" size="25" value="" name="countries" id="countries" autocomplete="off" />            
-   			</div>
+		<form method="POST" action="inserindo">			
 			<table border="0">
 				<tr>									
-					<td>Nome:</td>
-					<td><input type="hidden" name="campo" id="campo"/></td>
-					<td><input name="nm_baseline" size="30px"/></td>																									
-													
-				</tr>											
+					<td>Nome:</td>					
+					<td><input name="nm_baseline" size="30px"/></td>																																					
+				</tr>
+				<tr>
+					<td>Pesquisar:</td>
+					<td>
+						<div class="ausu-suggest">
+		      				<input type="text" size="25" value="" name="pesquisar" id="pesquisar" autocomplete="off" />            
+		   				</div>
+	   				</td>
+   				</tr>											
 			</table>						
 		<table border="0"  cellpadding="10px">
 			<tr>

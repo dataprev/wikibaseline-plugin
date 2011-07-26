@@ -40,12 +40,12 @@ class Baseline():
             return "Deu errado!"
 	
 
-    def popularWikiPages(self):
+    def popularWikiPages(self,arg):
+        sql = "SELECT DISTINCT name, MAX(version), author FROM wiki WHERE lower(name) LIKE lower('%%%s%%') GROUP BY name,author;" %arg 
         try:
             cursor = self.db.cursor()
-            cursor.execute("SELECT DISTINCT name, MAX(version), author FROM wiki GROUP BY name,author;")
-            resultset = cursor.fetchall()
-            #cursor.execute(sql,(self.id, self.name))
+            cursor.execute(sql)
+            resultset = cursor.fetchall()            
             return resultset    
         except:
             return "Deu errado!"

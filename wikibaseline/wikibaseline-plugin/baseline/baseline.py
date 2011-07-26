@@ -36,15 +36,15 @@ class BaselineModule(Component):
 		comentario = req.args.get("comentario")
 		baseline_id = req.args.get("baselineId")
 		pes = req.args.get("pesquisa")
-		arg = req.args.get("argumento")                 
+		arg = req.args.get("argumento")
+		pesquisar = req.args.get("data")                 
 		autor = req.authname		
 		item = ItemBaseline(self.env,baseline_id)                                    	
-		baseline = Baseline(self.env,nome,datetime.today(),comentario,autor)                                                   						 
+		baseline = Baseline(self.env,nome,datetime.today(),comentario,autor)                                                   						 			
 		add_stylesheet(req, 'hw/css/baseline.css')
-		#add_script(req, 'hw/js/jquery-1.5.2.min.js')
+		add_script(req, 'hw/js/jquery-1.5.2.min.js')
 		add_script(req, 'hw/js/jquery.ausu-autosuggest.min.js')		
 		
-				
 		if comando == "insert":
 			return self.adicionarBaseline(baseline)
 		
@@ -56,9 +56,17 @@ class BaselineModule(Component):
 		
 		if comando == "pesquisar":
 			return self.pesquisarBaseline(baseline,pes,arg)
+		
+		if comando == "json":
+			return self.getJson(baseline,pesquisar)
 		  				
 		return self.listarBaseline(baseline)
-
+	
+	def getJson(self,baseline,arg):
+		data = {}
+		data["dados"] = baseline.popularWikiPages(arg)		
+		return "teste.html", data, None
+	
 	def listarBaseline(self, baseline):		
 		data = {}
 		data["dados"] = baseline.popularBaseline()            
@@ -72,7 +80,7 @@ class BaselineModule(Component):
 	
 	def adicionarBaseline(self,baseline):
 		data={}
-		data["dados"] = baseline.popularWikiPages()		
+		#data["dados"] = baseline.popularWikiPages()		
 		return "inserirBaseline.html", data, None
 	
 	def pesquisarBaseline(self,baseline,pes,arg):

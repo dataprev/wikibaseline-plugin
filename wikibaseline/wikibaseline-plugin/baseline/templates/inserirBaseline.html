@@ -17,7 +17,53 @@
 	            minChars: 2,
 	            dataFile: 'json'
 	    });
-	});    
+	    $("#pesquisar").blur(
+				function(){
+					$.ajax({								
+						url:"searchWikiNames?wiki_name="+this.value,
+						datatype: "html",
+						success:function(n){							
+							$("#table").html(n)							
+						}
+					}
+					)
+				}
+			)
+		var wiki_elements = new Array();
+	    
+	    var loadWikiElements = function(obj){
+	    	wiki_elements.push(obj)
+	    }
+	    
+	    obj = {"a":"first element"}
+	    
+	    loadWikiElements(obj)
+	    obj = {"a":"second element"}
+	    loadWikiElements(obj)
+	   
+	    
+	    $("#adicionar").live('click',
+	    		function(){
+	    			//alert($('#wikis').find().length())
+	    			$('#wikis').find('td').each(
+	    				function(){
+	    					el  = this.firstChild
+	    					if(el){
+		    					if(el.type == 'checkbox'){
+		    						if(el.checked){
+				    					alert(this)
+				    					$('#selected-wiki').append('<tr><td>foobar</td></tr>')
+		    						} 	    								    						
+		    					}
+	    					}
+	    				}
+	    			)
+	    		}
+		)
+	}); 
+	
+
+	
 	</script>	
   </head>
   <body>	
@@ -40,21 +86,17 @@
 	   				</td>
    				</tr>
    			</table>																	
-		<table border="0"  cellpadding="10px">
-			<tr>
-				<td></td>
-    			<td>Nome</td>    			
-    			<td>Versão</td>
-    		</tr>    		
-  			<py:for each="item in dados">
-    			<tr>
-    				<td><input type="checkbox" name="checkbase" value="${item[0]}+${item[1]}"/></td>					
-    				<td><a href="../wiki/${item[0]}?version=${item[1]}">${item[0]}</a></td>    				    				
-    				<td>${item[2]}</td>
-    				<td>${item[1]}</td>						  				    				
-    			</tr>
-  			</py:for>  			  			  		
-  		</table>
+		<fieldset style="width: 48%; float: left; border-color: black">
+			<legend>Lista</legend>			
+			<div id="table"></div>
+  		</fieldset>
+  		  		
+  		<fieldset style="width: 48%; float: right; border-color: black">
+			<legend>Adicionado</legend>
+				<table id="selected-wiki" />
+  		</fieldset>
+  		
+  		<br clear="both"></br>  		
   		<table border="0">
   		<tr>
   			<td>Comentarios</td>	

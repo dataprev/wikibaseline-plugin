@@ -36,6 +36,7 @@ class BaselineModule(Component):
 		comentario = req.args.get("comentario")
 		baseline_id = req.args.get("baselineId")
 		pes = req.args.get("pesquisa")
+		wiki_name = req.args.get("wiki_name")		
 		arg = req.args.get("argumento")
 		pesquisar = req.args.get("data")                 
 		autor = req.authname		
@@ -59,6 +60,9 @@ class BaselineModule(Component):
 		
 		if comando == "json":
 			return self.getJson(baseline,pesquisar)
+		
+		if comando == "searchWikiNames":
+			return self.searchWikiNames(baseline,wiki_name)
 		  				
 		return self.listarBaseline(baseline)
 	
@@ -66,6 +70,11 @@ class BaselineModule(Component):
 		data = {}
 		data["dados"] = baseline.popularWikiPages(arg)		
 		return "teste.html", data, None
+	
+	def searchWikiNames(self,baseline,pes):
+		data={}
+		data["dados"] = baseline.popularWikiPages(pes)
+		return "table.html", data, None
 	
 	def listarBaseline(self, baseline):		
 		data = {}
@@ -80,7 +89,7 @@ class BaselineModule(Component):
 	
 	def adicionarBaseline(self,baseline):
 		data={}
-		#data["dados"] = baseline.popularWikiPages()		
+		data["dados"] = baseline.popularWikiPages("")		
 		return "inserirBaseline.html", data, None
 	
 	def pesquisarBaseline(self,baseline,pes,arg):

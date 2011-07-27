@@ -3,6 +3,7 @@
 *.py~
 *.html~
 *.egg-info
+*.*~
 tags
 build
 dist

@@ -10,14 +10,27 @@
  
 	<script type="text/javascript">
 		
-	$(document).ready(function() {
-	    $.fn.autosugguest({
-	           className: 'ausu-suggest',
-	          methodType: 'get',
-	            minChars: 2,
-	            dataFile: 'json'
-	    });
-	    $("#pesquisar").blur(
+	$(document).ready(function() {	        
+	    
+	    $("#enviar").click(
+	    		function(){
+	    			$('#selected-wiki').find('td').each(
+		    				function(){
+		    					el  = this.firstChild
+		    					if(el){
+			    					if(el.type == 'checkbox'){
+			    						el.checked = true				    					
+			    					}
+		    					}
+		    				}
+		    				
+					)
+	    		}		
+	    			
+	    )
+	
+	    
+	    $("#pesquisar").keypress(
 				function(){
 					$.ajax({								
 						url:"searchWikiNames?wiki_name="+this.value,
@@ -29,35 +42,42 @@
 					)
 				}
 			)
-		var wiki_elements = new Array();
-	    
-	    var loadWikiElements = function(obj){
-	    	wiki_elements.push(obj)
-	    }
-	    
-	    obj = {"a":"first element"}
-	    
-	    loadWikiElements(obj)
-	    obj = {"a":"second element"}
-	    loadWikiElements(obj)
-	   
+		
+		$("#remover").click(
+				function(){	    				    			
+	    			$('#selected-wiki').find('td').each(
+	    				function(){
+	    					el  = this.firstChild
+	    					if(el){
+		    					if(el.type == 'checkbox'){
+		    						if(el.checked){				    					
+				    					node = el.parentNode.parentNode
+				    					node.parentNode.removeChild(node)
+		    						} 	    								    						
+		    					}
+	    					}
+	    				}
+	    			)	    			
+	    		}
+		)
 	    
 	    $("#adicionar").live('click',
-	    		function(){
-	    			//alert($('#wikis').find().length())
+	    		function(){	    				    			
 	    			$('#wikis').find('td').each(
 	    				function(){
 	    					el  = this.firstChild
 	    					if(el){
 		    					if(el.type == 'checkbox'){
 		    						if(el.checked){
-				    					alert(this)
-				    					$('#selected-wiki').append('<tr><td>foobar</td></tr>')
+				    					arg = el.value.split("+")
+				    					$('#fieldsetAd').css("display","")
+				    					$('#selected-wiki').append('<tr><td><input type="checkbox" value="'+arg[0]+'+'+arg[1]+'" name="checkbase"/></td><td>'+arg[0]+'</td>\
+				    												<td>'+arg[1]+'</td><td>'+arg[2]+'</td></tr>')				    									    					
 		    						} 	    								    						
 		    					}
 	    					}
 	    				}
-	    			)
+	    			)	    			
 	    		}
 		)
 	}); 
@@ -70,42 +90,47 @@
     <div id="ctxtnav" class="nav"></div>
 
     <div id="content" class="helloworld">
-		<h1>Nova Baseline</h1>				
-		<form method="POST" action="inserindo">			
-			<table border="0">
-				<tr>									
-					<td>Nome:</td>					
-					<td><input name="nm_baseline" size="30px"/></td>																																					
-				</tr>
+		<h1>Nova Baseline</h1>									
+			<table border="0">				
 				<tr>
 					<td>Pesquisar:</td>
-					<td>
+					<td><input id="pesquisar" name="pesquisar" size="30px"/></td>
+					<!-- <td>
 						<div class="ausu-suggest">
 		      				<input type="text" size="25" value="" name="pesquisar" id="pesquisar" autocomplete="off" />            
 		   				</div>
-	   				</td>
+	   				</td> -->
    				</tr>
    			</table>																	
 		<fieldset style="width: 48%; float: left; border-color: black">
 			<legend>Lista</legend>			
 			<div id="table"></div>
   		</fieldset>
-  		  		
-  		<fieldset style="width: 48%; float: right; border-color: black">
+  		<form method="POST" action="inserindo">  		
+  		<fieldset id="fieldsetAd" style="width: 48%; float: right; border-color: black; display: none">
 			<legend>Adicionado</legend>
-				<table id="selected-wiki" />
+				<table border="0"  cellpadding="10px" id='selected-wiki'>
+					<tr><td><input type="button" value="Remover" id="remover"/></td></tr>
+					<tr><td></td><td>Nome</td><td>Autor</td><td>Versão</td></tr>
+				</table>				
   		</fieldset>
   		
-  		<br clear="both"></br>  		
+  		<br clear="both"></br>  		  		
   		<table border="0">
-  		<tr>
-  			<td>Comentarios</td>	
-  		</tr>
-  		<tr>
-  			<td><textarea rows="10" cols="80" name="comentario" id="comentario"></textarea></td>	
-  		</tr>
+	  		<tr>									
+				<td>Nome:</td>					
+				<td><input name="nm_baseline" size="30px"/></td>																																					
+			</tr>
+		</table>
+		<table border="0">
+	  		<tr>
+	  			<td>Comentarios</td>	
+	  		</tr>
+	  		<tr>
+	  			<td><textarea rows="10" cols="80" name="comentario" id="comentario"></textarea></td>	
+	  		</tr>
   		</table>
-  		<input type="submit" value="Enviar"/> 
+  		<input type="submit" value="Enviar" id="enviar"/> 
   		</form>					  		  		  				
     </div>
   </body>

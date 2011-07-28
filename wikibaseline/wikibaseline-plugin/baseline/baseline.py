@@ -42,9 +42,7 @@ class BaselineModule(Component):
 		autor = req.authname		
 		item = ItemBaseline(self.env,baseline_id)                                    	
 		baseline = Baseline(self.env,nome,datetime.today(),comentario,autor)                                                   						 			
-		add_stylesheet(req, 'hw/css/baseline.css')
-		add_script(req, 'hw/js/jquery-1.5.2.min.js')
-		add_script(req, 'hw/js/jquery.ausu-autosuggest.min.js')		
+		add_stylesheet(req, 'hw/css/baseline.css')						
 		
 		if comando == "insert":
 			return self.adicionarBaseline(baseline)
@@ -58,18 +56,18 @@ class BaselineModule(Component):
 		if comando == "pesquisar":
 			return self.pesquisarBaseline(baseline,pes,arg)
 		
-		if comando == "json":
-			return self.getJson(baseline,pesquisar)
+		#if comando == "json":
+		#	return self.getJson(baseline,pesquisar)
 		
 		if comando == "searchWikiNames":
 			return self.searchWikiNames(baseline,wiki_name)
 		  				
 		return self.listarBaseline(baseline)
 	
-	def getJson(self,baseline,arg):
-		data = {}
-		data["dados"] = baseline.popularWikiPages(arg)		
-		return "teste.html", data, None
+	#def getJson(self,baseline,arg):
+	#	data = {}
+	#	data["dados"] = baseline.popularWikiPages(arg)		
+	#	return "json.html", data, None
 	
 	def searchWikiNames(self,baseline,pes):
 		data={}

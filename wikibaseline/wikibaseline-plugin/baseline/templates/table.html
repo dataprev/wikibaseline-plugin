@@ -1,0 +1,24 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      <form>
+		<input type="button" value="Adicionar" id="adicionar" />
+		<table border="0"  cellpadding="10px" id='wikis'>
+						<tr>
+							<td></td>
+			    			<td>Nome</td>    			
+			    			<td>Autor</td>
+			    			<td>Versão</td>			    			
+			    		</tr>    		
+			  			<py:for each="item in dados">
+			    			<tr>
+			    				<td><input type="checkbox" name="checkbase" teste="" value="${item[0]}+${item[1]}+${item[2]}"/></td>					
+			    				<td><a href="../wiki/${item[0]}?version=${item[1]}">${item[0]}</a></td>    				    				
+			    				<td>${item[2]}</td>
+			    				<td>${item[1]}</td>						  				    				
+			    			</tr>
+			  			</py:for>  			  			  		
+		</table>
+		</form>
+</html>

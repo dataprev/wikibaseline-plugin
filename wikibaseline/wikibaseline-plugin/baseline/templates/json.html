@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="layout.html" />
+
+
+<!--  <div>
+${pesquisar}
+${dados}
+</div>-->
+<ul>
+<py:for each="item in dados">
+	<li id="${item[0]}"><a href="#">${item[0]}</a></li>
+</py:for>
+</ul>
+</html>

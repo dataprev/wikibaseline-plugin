@@ -58,6 +58,7 @@ class BaselineProvider(Component):
             cursor.execute("ALTER TABLE baseline ADD CONSTRAINT fk_baseline_nome UNIQUE (nome);")
             cursor.execute("ALTER TABLE itembaseline ADD constraint fk_baseline_id foreign key (baseline_id) references baseline (id),\
                             ADD constraint fk_wiki foreign key (wiki_nome, wiki_versao) references wiki (name,version);")
+            cursor.execute("INSERT INTO permission (name,action)VALUES('authenticated','BASELINE_VIEW');")
             db.commit()
 
         except:

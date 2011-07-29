@@ -107,30 +107,33 @@
 			<div id="table"></div>
   		</fieldset>
   		<form method="POST" action="inserindo">  		
-  		<fieldset id="fieldsetAd" style="width: 48%; float: right; border-color: black; display: none">
-			<legend>Adicionado</legend>
+  		<fieldset style="width: 48%; float: right; border-color: black;">
+	  		<legend>Dados Baseline</legend>
+	  		<table border="0">
+		  		<tr>									
+					<td>Nome:</td>					
+					<td><input name="nm_baseline" size="30px"/></td>																																					
+				</tr>
+			</table>
+			<table border="0">
+		  		<tr>
+		  			<td>Comentarios</td>	
+		  		</tr>
+		  		<tr>
+		  			<td><textarea rows="10" cols="80" name="comentario" id="comentario" style="border-color: gray"></textarea></td>	
+		  		</tr>
+	  		</table>
+	  		<fieldset id="fieldsetAd" style="border-color: white; display: none">			
 				<table border="0"  cellpadding="10px" id='selected-wiki'>
 					<tr><td><input type="button" value="Remover" id="remover"/></td></tr>
 					<tr><td></td><td>Nome</td><td>Autor</td><td>Versão</td></tr>
 				</table>				
-  		</fieldset>
+  			</fieldset>
+	  		<input type="submit" value="Enviar" id="enviar"/>  		
+  		</fieldset> 
   		
-  		<br clear="both"></br>  		  		
-  		<table border="0">
-	  		<tr>									
-				<td>Nome:</td>					
-				<td><input name="nm_baseline" size="30px"/></td>																																					
-			</tr>
-		</table>
-		<table border="0">
-	  		<tr>
-	  			<td>Comentarios</td>	
-	  		</tr>
-	  		<tr>
-	  			<td><textarea rows="10" cols="80" name="comentario" id="comentario"></textarea></td>	
-	  		</tr>
-  		</table>
-  		<input type="submit" value="Enviar" id="enviar"/> 
+  		
+  		<br clear="both"></br>  		  		  		
   		</form>					  		  		  				
     </div>
   </body>

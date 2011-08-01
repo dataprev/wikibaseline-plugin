@@ -8,6 +8,7 @@ from trac.web import IRequestHandler
 from trac.web.chrome import INavigationContributor, ITemplateProvider, add_stylesheet, add_script
 from model import Baseline
 from model import ItemBaseline
+from baselineBusinessController import *
 from trac.wiki.model import *
 from datetime import datetime
 from trac.perm import IPermissionRequestor
@@ -30,87 +31,36 @@ class BaselineModule(Component):
 		return ['BASELINE_VIEW']
 	
 	def process_request(self, req):        		       
-		nome = req.args.get("nm_baseline")
-		comando = req.path_info.rsplit("/",1)[1]
+		name = req.args.get("name")
+		command = req.path_info.rsplit("/",1)[1]
 		check = req.args.get("checkbase") 
-		comentario = req.args.get("comentario")
+		comment = req.args.get("comment")
 		baseline_id = req.args.get("baselineId")
-		pes = req.args.get("pesquisa")
+		termsearch = req.args.get("termsearch")
 		wiki_name = req.args.get("wiki_name")		
-		arg = req.args.get("argumento")
-		pesquisar = req.args.get("data")                 
-		autor = req.authname		
+		arg = req.args.get("arg")		               
+		author = req.authname		
 		item = ItemBaseline(self.env,baseline_id)                                    	
-		baseline = Baseline(self.env,nome,datetime.today(),comentario,autor)                                                   						 			
+		baseline = Baseline(self.env,name,datetime.today(),comment,author) 
+		bbc = BaselineBusinessController()                                                  						 			
 		add_stylesheet(req, 'hw/css/baseline.css')						
 		
-		if comando == "insert":
-			return self.adicionarBaseline(baseline)
+		if command == "insert":
+			return bbc.insertBaseline(baseline)
 		
-		if comando == "view":
-			return self.visualizarBaseline(item)
+		if command == "view":
+			return bbc.viewBaseline(item)
 		
-		if comando == "inserindo":			
-			return self.inserindoBaseline(baseline,check)
+		if command == "info":			
+			return bbc.infoInsertBaseline(baseline,check,self.env)
 		
-		if comando == "pesquisar":
-			return self.pesquisarBaseline(baseline,pes,arg)
+		if command == "search":
+			return bbc.searchBaseline(baseline,termsearch,arg)
 		
-		#if comando == "json":
-		#	return self.getJson(baseline,pesquisar)
-		
-		if comando == "searchWikiNames":
-			return self.searchWikiNames(baseline,wiki_name)
+		if command == "searchWikiNames":
+			return bbc.searchWikiNames(baseline,wiki_name)
 		  				
-		return self.listarBaseline(baseline)
-	
-	#def getJson(self,baseline,arg):
-	#	data = {}
-	#	data["dados"] = baseline.popularWikiPages(arg)		
-	#	return "json.html", data, None
-	
-	def searchWikiNames(self,baseline,pes):
-		data={}
-		data["dados"] = baseline.popularWikiPages(pes)
-		return "table.html", data, None
-	
-	def listarBaseline(self, baseline):		
-		data = {}
-		data["dados"] = baseline.popularBaseline()            
-		return "baseline.html", data, None
-	
-	def visualizarBaseline(self, item):		
-		data = {}		
-		data["dados"] = item.popularItemBaselineByBaselineId()            
-		return "visualizarBaseline.html", data, None
-		
-	
-	def adicionarBaseline(self,baseline):
-		data={}
-		data["dados"] = baseline.popularWikiPages("")		
-		return "inserirBaseline.html", data, None
-	
-	def pesquisarBaseline(self,baseline,pes,arg):
-		data={}
-		if arg == "wiki":
-			data["dados"] = baseline.pesquisarBaselineByItemBaseline(pes)
-		else:			
-			data["dados"] = baseline.pesquisarBaseline(arg,pes)
-		return "baseline.html", data, None
-		
-	def inserindoBaseline(self,baseline,check):
-		data={}
-		if baseline.inserirBaseline():
-			data["info"] = "Cadastro efetuado com sucesso!"
-			id = baseline.getBaselineByName()
-    		
-			for x in check:
-				dados = x.split("+")
-				itemBase = ItemBaseline(self.env,id[0][0],dados[0],dados[1])
-				itemBase.inserirItemBaseline()
-		else:
-			data["info"] = "Nao foi possivel efetuar cadastro!"                  
-		return 'info.html', data, None	
+		return bbc.getBaseline(baseline)		
 	
 	def get_templates_dirs(self):
 		from pkg_resources import resource_filename

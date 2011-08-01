@@ -11,15 +11,15 @@ class BaselineProvider(Component):
     SCHEMA = [
         Table('baseline', key = ('id'))[
               Column('id','serial'),
-              Column('nome','varchar'),
-              Column('data','timestamp'),
-              Column('comentario'),
-              Column('autor','varchar'),              
+              Column('name','varchar'),
+              Column('dt','timestamp'),
+              Column('comment'),
+              Column('author','varchar'),              
               ],
-        Table('itembaseline', key = ('baseline_id','wiki_nome','wiki_versao'))[
+        Table('itembaseline', key = ('baseline_id','wiki_name','wiki_version'))[
               Column('baseline_id','int'),
-              Column('wiki_nome','varchar'),
-              Column('wiki_versao','int'),
+              Column('wiki_name','varchar'),
+              Column('wiki_version','int'),
               ]
         ]
 
@@ -55,10 +55,10 @@ class BaselineProvider(Component):
                 for stmt in db_backend.to_sql(table):
                     self.env.log.debug(stmt)
                     cursor.execute(stmt)                        
-            cursor.execute("ALTER TABLE baseline ADD CONSTRAINT fk_baseline_nome UNIQUE (nome);")
+            cursor.execute("ALTER TABLE baseline ADD CONSTRAINT fk_baseline_name UNIQUE (name);")
             cursor.execute("ALTER TABLE itembaseline ADD constraint fk_baseline_id foreign key (baseline_id) references baseline (id),\
-                            ADD constraint fk_wiki foreign key (wiki_nome, wiki_versao) references wiki (name,version);")
-            cursor.execute("INSERT INTO permission (name,action)VALUES('authenticated','BASELINE_VIEW');")
+                            ADD constraint fk_wiki foreign key (wiki_name, wiki_version) references wiki (name,version);")
+            cursor.execute("INSERT INTO permission (username,action)VALUES('authenticated','BASELINE_VIEW');")
             db.commit()
 
         except:

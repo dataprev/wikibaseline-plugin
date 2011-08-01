@@ -8,40 +8,35 @@
   <head>
     <title>Baseline</title>
   </head>
-  <body>
-	<script language="JavaScript">	
-		function inserir(){
-			document.getElementById('campo').value = "1";				
-		}	
-	</script>
+  <body>	
     <div id="ctxtnav" class="nav"></div>
 
     <div id="content" class="helloworld">
 		<h1>Baseline</h1>						
-		<form method="GET" action="${req.href('baseline')}/pesquisar">
+		<form method="POST" action="${req.href('baseline')}/search">
 			<table border="0">
 				<tr>									
-					<td>Nome:</td>					
-					<td><input name="pesquisa" size="30px"/></td>
+					<td>Name:</td>					
+					<td><input name="termsearch" size="30px"/></td>
 					<td>
-						<select name="argumento">
-							<option value="nome">Nome</option>
-							<option value="autor">Autor</option>
-							<option value="wiki">Pag. Wiki</option>						
+						<select name="arg">
+							<option value="name">Name</option>
+							<option value="author">Author</option>
+							<option value="wiki">Page Wiki</option>						
 						</select>
 					</td>
-					<td><input type="submit" name="pesquisar" value="Pesquisar" size="30px"/></td>																																					
+					<td><input type="submit" value="Search" size="30px"/></td>																																					
 				</tr>											
 			</table>								
 		</form>
 		<table border="0"  cellpadding="10px">
 			<tr>
 				<td></td>
-    			<td>Nome</td>    			
-    			<td>Data</td>
-    			<td>Autor</td>    			
+    			<td>Name</td>    			
+    			<td>Date</td>
+    			<td>Author</td>    			
     		</tr>    		
-  			<py:for each="item in dados">
+  			<py:for each="item in data">
     			<tr>
     				<td><input type="checkbox" name="checkbase" value="${item[0]}+"/></td>					
     				<td><a href="${req.href('baseline')}/view?baselineId=${item[0]}">${item[1]}</a></td>    				    				    			
@@ -50,7 +45,7 @@
     			</tr>
   			</py:for>  			  			  		
   		</table>  		  		
-  		<a href="${req.href('baseline')}/insert">Nova Baseline</a>					  		  		  				
+  		<a href="${req.href('baseline')}/insert">New Baseline</a>					  		  		  				
     </div>
   </body>
 </html>

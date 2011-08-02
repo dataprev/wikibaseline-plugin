@@ -40,7 +40,7 @@
     			<tr>
     				<td><input type="checkbox" name="checkbase" value="${item[0]}+"/></td>					
     				<td><a href="${req.href('baseline')}/view?baselineId=${item[0]}">${item[1]}</a></td>    				    				    			
-    				<td>${item[2]}</td>
+    				<td>${item[2].__str__()}</td>
     				<td>${item[3]}</td>						    				    			
     			</tr>
   			</py:for>  			  			  		

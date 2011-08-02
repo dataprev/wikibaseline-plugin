@@ -1,0 +1,34 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="layout.html" />
+  <head>
+    <title>Baseline</title>
+  </head>
+  <body>
+    <div id="ctxtnav" class="nav"></div>
+
+    <div id="content" class="helloworld">
+		<h1>Baseline</h1>				
+		<form method="GET">									
+		<table border="0"  cellpadding="10px">
+			<tr>
+				<!--<td></td>-->
+    			<td>Name</td>    			
+    			<td>Version</td>
+    		</tr>    		
+  			<py:for each="item in data">
+    			<tr>
+    				<!--<td><input type="checkbox" name="checkbase" value="${item[0]}+${item[1]}"/></td>-->					
+    				<td><a href="${req.href('wiki')}/${item[1]}?version=${item[2]}">${item[1]}</a></td>    				    				
+    				<td>${item[2]}</td>    										  				    			
+    			</tr>
+  			</py:for>  			  			  		
+  		</table>  			
+  		</form>					  		  		  				
+    </div>
+  </body>
+</html>

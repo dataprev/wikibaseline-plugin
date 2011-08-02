@@ -1,0 +1,135 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="layout.html" />
+  <head>
+    <title>Baseline</title>       
+ 
+	<script type="text/javascript">
+		
+	$(document).ready(function() {	        
+	    
+	    $("#send").click(
+	    		function(){
+	    			$('#selected-wiki').find('td').each(
+		    				function(){
+		    					el  = this.firstChild
+		    					if(el){
+			    					if(el.type == 'checkbox'){
+			    						el.checked = true				    					
+			    					}
+		    					}
+		    				}
+		    				
+					)
+	    		}		
+	    			
+	    )
+	
+	    
+	    $("#searchWiki").keypress(
+				function(){
+					$.ajax({								
+						url:"searchWikiNames?wiki_name="+this.value,
+						datatype: "html",
+						success:function(n){							
+							$("#table").html(n)							
+						}
+					}
+					)
+				}
+			)
+		
+		$("#remove").click(
+				function(){	    				    			
+	    			$('#selected-wiki').find('td').each(
+	    				function(){
+	    					el  = this.firstChild
+	    					if(el){
+		    					if(el.type == 'checkbox'){
+		    						if(el.checked){				    					
+				    					node = el.parentNode.parentNode
+				    					node.parentNode.removeChild(node)
+		    						} 	    								    						
+		    					}
+	    					}
+	    				}
+	    			)	    			
+	    		}
+		)
+	    
+	    $("#add").live('click',
+	    		function(){	    				    			
+	    			$('#wikis').find('td').each(
+	    				function(){
+	    					el  = this.firstChild
+	    					if(el){
+		    					if(el.type == 'checkbox'){
+		    						if(el.checked){
+				    					arg = el.value.split("+")
+				    					$('#fieldsetAd').css("display","")
+				    					$('#selected-wiki').append('<tr><td><input type="checkbox" value="'+arg[0]+'+'+arg[1]+'" name="checkbase"/></td><td>'+arg[0]+'</td>\
+				    												<td>'+arg[1]+'</td><td>'+arg[2]+'</td></tr>')				    									    					
+		    						} 	    								    						
+		    					}
+	    					}
+	    				}
+	    			)	    			
+	    		}
+		)
+	}); 
+	
+
+	
+	</script>	
+  </head>
+  <body>	
+    <div id="ctxtnav" class="nav"></div>
+
+    <div id="content" class="helloworld">
+		<h1>New Baseline</h1>									
+			<table border="0">				
+				<tr>
+					<td>Search:</td>
+					<td><input id="searchWiki" name="searchWiki" size="30px"/></td>					
+   				</tr>
+   			</table>																	
+		<fieldset style="width: 48%; float: left; border-color: black">
+			<legend>List</legend>			
+			<div id="table"></div>
+  		</fieldset>
+  		<form method="POST" action="info">  		
+  		<fieldset style="width: 48%; float: right; border-color: black;">
+	  		<legend>Data Baseline</legend>
+	  		<table border="0">
+		  		<tr>									
+					<td>Name:</td>					
+					<td><input name="name" size="30px"/></td>																																					
+				</tr>
+			</table>
+			<table border="0">
+		  		<tr>
+		  			<td>Comments</td>	
+		  		</tr>
+		  		<tr>
+		  			<td><textarea rows="10" cols="80" name="comment" id="comment" style="border-color: gray"></textarea></td>	
+		  		</tr>
+	  		</table>
+	  		<fieldset id="fieldsetAd" style="border-color: white; display: none">			
+				<table border="0"  cellpadding="10px" id='selected-wiki'>
+					<tr><td><input type="button" value="Remove" id="remove"/></td></tr>
+					<tr><td></td><td>Name</td><td>Author</td><td>Version</td></tr>
+				</table>				
+  			</fieldset>
+	  		<input type="submit" value="Send" id="send"/>  		
+  		</fieldset> 
+  		
+  		
+  		<br clear="both"></br>  		  		  		
+  		</form>					  		  		  				
+    </div>
+  </body>
+</html>

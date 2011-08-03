@@ -3,22 +3,26 @@
       xmlns:py="http://genshi.edgewall.org/"
       xmlns:xi="http://www.w3.org/2001/XInclude">
       <form>
-		<input type="button" value="Add" id="add" />
-		<table border="0"  cellpadding="10px" id='wikis'>
-						<tr>
-							<td></td>
-			    			<td>Nome</td> 										    			   		
-			    			<td>Autor</td>
-			    			<td>Versão</td>			    			
-			    		</tr>    		
-			  			<py:for each="item in data">
-			    			<tr>
-			    				<td><input type="checkbox" name="checkbase" teste="" value="${item[0]}+${item[1]}+${item[2]}"/></td>					
-			    				<td><a href="../wiki/${item[0]}?version=${item[1]}">${item[0]}</a></td>    				    							    				
-			    				<td>${item[2]}</td>
-			    				<td>${item[1]}</td>						  				    				
-			    			</tr>
-			  			</py:for>  			  			  		
+		<input type="button" value="Add" id="add" class="button"/>		
+		<table style="width: 560px" id='wikis' class="teste" cellspacing="0">
+			<thead>
+				<tr>
+					<td></td>
+	    			<td>Nome</td> 										    			   		
+	    			<td>Autor</td>
+	    			<td>Versão</td>			    			
+	    		</tr>
+    		</thead> 
+    		<tbody>			    		   		
+	  			<py:for each="item in data">
+	    			<tr>
+	    				<td><input type="checkbox" name="checkbase" teste="" value="${item[0]}+${item[1]}+${item[2]}"/></td>					
+	    				<td><a href="../wiki/${item[0]}?version=${item[1]}">${item[0]}</a></td>    				    							    				
+	    				<td>${item[2]}</td>
+	    				<td>${item[1]}</td>						  				    				
+	    			</tr>
+	  			</py:for>
+  			</tbody>  			  			  		
 		</table>
-		</form>
+	</form>
 </html>

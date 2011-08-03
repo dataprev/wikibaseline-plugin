@@ -2,66 +2,47 @@ div.helloworld h1 {
         color: red;
 }
 
-.msg{
-	color: red;
-}
-
-
 div {
 	margin: 10px
 }
 
-.ausu-suggest input
-{
-    padding:6px;
-    border:1px #CCC solid;
-    font-size:14px;
+.teste table { margin: 1em; border-collapse: collapse;  }
+.teste td, th { padding: .3em; border: 0.5px #ccc solid; }
+.teste thead { background: red; text-align: center }
+.teste tbody { background: gray; }
+
+.button {    
+  
+  margin: 0.7em 0.5em 0.7em 0;
+  padding:5px 10px 5px 7px;   /* Links */
+  
+  border:1px solid #dedede;
+  border-top:1px solid #eee;
+  border-left:1px solid #eee;
+  -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+  background-color:#f5f5f5;
+  font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+  font-size:100%;
+  line-height:130%;
+  text-decoration:none;
+  font-weight:bold;
+  color:#565656;
+  cursor:pointer;
 }
 
-.ausu-suggestionsBox
-{
-    position: absolute;
-    left: 0px;
-    top:-2px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    margin: 26px 0px 0px 0px;
-    width: 200px;
-    padding:0px;
-    color: #fff;
-    display: none;
-    padding: 0 0 0 0;
+.button:hover{
+  background-color:gray;
+  border:1px solid silver;
+  color:red;
 }
 
-.ausu-suggestionsBox ul 
-{
-    list-style:none;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    background-color: #000;
+.button:active{
+  background-color:silver;
+  border:1px solid silver;
+  color: #FF4500;
 }
 
-.ausu-suggestionsBox ul li a
-{
-    display: block;
-    text-indent:  4px;
-    width: 100%;
-    color: #FFF;
-    text-decoration: none;
-    padding: 6px 0 6px 0;
-    border-bottom:1px solid #666;
-}
 
-.ausu-load { background: url(../images/loader.gif) right no-repeat; }
 
-.ausu-suggest
-{
-    position:relative;
-    float: left;
-}
-
-.selected a
-{
-    background-color: #ff3366;
-	color:#FFF;
-}

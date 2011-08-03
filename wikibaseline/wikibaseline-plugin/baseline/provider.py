@@ -56,6 +56,7 @@ class BaselineProvider(Component):
                     self.env.log.debug(stmt)
                     cursor.execute(stmt)                        
             cursor.execute("ALTER TABLE baseline ADD CONSTRAINT fk_baseline_name UNIQUE (name);")
+            cursor.execute("ALTER TABLE baseline ALTER COLUMN name SET NOT NULL;")
             cursor.execute("ALTER TABLE itembaseline ADD constraint fk_baseline_id foreign key (baseline_id) references baseline (id),\
                             ADD constraint fk_wiki foreign key (wiki_name, wiki_version) references wiki (name,version);")
             cursor.execute("INSERT INTO permission (username,action)VALUES('authenticated','BASELINE_VIEW');")

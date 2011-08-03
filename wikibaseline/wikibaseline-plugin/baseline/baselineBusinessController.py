@@ -33,15 +33,20 @@ class BaselineBusinessController():
         return "baseline.html", data, None
         
     def infoInsertBaseline(self,baseline,check,env):
-        data={}
-        if baseline.insertBaseline():
-            data["info"] = "Registration done successfully!"
+        data={}            
+        if baseline.insertBaseline():            
             id = baseline.getBaselineByName()
-            
-            for x in check:
-                wiki = x.split("+")
+            if isinstance(check, list):
+                for x in check:
+                    wiki = x.split("+")             
+                    itemBase = ItemBaseline(env,id[0][0],wiki[0],wiki[1])
+                    itemBase.insertItemBaseline()
+            else:
+                wiki = check.split("+")        
                 itemBase = ItemBaseline(env,id[0][0],wiki[0],wiki[1])
                 itemBase.insertItemBaseline()
+                
+            data["info"] = "Baseline inserted successfully!"
         else:
             data["info"] = "Could not you register!"                  
         return 'info.html', data, None    

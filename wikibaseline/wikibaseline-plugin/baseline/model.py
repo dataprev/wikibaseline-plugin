@@ -19,7 +19,7 @@ class Baseline():
             return "Erro!"
     
     def searchBaseline(self,arg,pes):
-        sql = "SELECT id,name,dt,author FROM baseline WHERE %s LIKE '%s%%';" %(arg,pes) 
+        sql = "SELECT id,name,dt,author FROM baseline WHERE lower(%s) LIKE lower('%s%%');" %(arg,pes) 
         try:            
             cursor = self.db.cursor()
             cursor.execute(sql)
@@ -29,7 +29,7 @@ class Baseline():
             return "Erro!"
     
     def searchBaselineByItemBaseline(self,pes):
-        sql = "SELECT baseline.id,baseline.name,baseline.dt,baseline.author FROM itembaseline INNER JOIN baseline ON (baseline_id = id) WHERE wiki_name LIKE '%s%%';" %pes
+        sql = "SELECT DISTINCT baseline.id,baseline.name,baseline.dt,baseline.author FROM itembaseline INNER JOIN baseline ON (baseline_id = id) WHERE lower(wiki_name) LIKE lower('%s%%');" %pes
         try:
             cursor = self.db.cursor()
             cursor.execute(sql)

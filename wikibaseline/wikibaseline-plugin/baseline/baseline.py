@@ -30,10 +30,10 @@ class BaselineModule(Component):
 	def get_permission_actions(self):        
 		return ['BASELINE_VIEW']
 	
-	def process_request(self, req):        		       
+	def process_request(self, req): 		       		      
 		name = req.args.get("name")
 		command = req.path_info.rsplit("/",1)[1]
-		check = req.args.get("checkbase") 
+		check = req.args.get("checkbase")  
 		comment = req.args.get("comment")
 		baseline_id = req.args.get("baselineId")
 		termsearch = req.args.get("termsearch")
@@ -43,7 +43,7 @@ class BaselineModule(Component):
 		item = ItemBaseline(self.env,baseline_id)                                    	
 		baseline = Baseline(self.env,name,datetime.today(),comment,author) 
 		bbc = BaselineBusinessController()                                                  						 			
-		add_stylesheet(req, 'hw/css/baseline.css')						
+		add_stylesheet(req, 'hw/css/baseline.css')				
 		
 		if command == "insert":
 			return bbc.insertBaseline(baseline)

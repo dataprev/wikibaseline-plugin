@@ -83,6 +83,7 @@
 	}); 
 	
 
+
 	
 	</script>	
   </head>
@@ -90,24 +91,22 @@
     <div id="ctxtnav" class="nav"></div>
 
     <div id="content" class="helloworld">
-		<h1>New Baseline</h1>									
-			<table border="0">				
-				<tr>
-					<td>Search:</td>
-					<td><input id="searchWiki" name="searchWiki" size="30px"/></td>					
-   				</tr>
-   			</table>																	
-		<fieldset style="width: 48%; float: left; border-color: black">
+		<h3>New Baseline</h3>																			
+			<div>
+				Search:  <input id="searchWiki" name="searchWiki" size="30px"/>
+			</div>					   				   																				
+		<fieldset style="width: 580px; float: left; border-color: black">
 			<legend>List</legend>			
 			<div id="table"></div>
   		</fieldset>
-  		<form method="POST" action="info">  		
-  		<fieldset style="width: 48%; float: right; border-color: black;">
+  		
+  		<form method="POST" action="info" id="frm_baseline">  		
+  		<fieldset style="width: 580px; float: right; border-color: black;">
 	  		<legend>Data Baseline</legend>
 	  		<table border="0">
 		  		<tr>									
 					<td>Name:</td>					
-					<td><input name="name" size="30px"/></td>																																					
+					<td><input name="name" id="nm_baseline" size="30px" maxlength="50"/><span id="msg" style="color: red"></span></td>																																					
 				</tr>
 			</table>
 			<table border="0">
@@ -115,21 +114,40 @@
 		  			<td>Comments</td>	
 		  		</tr>
 		  		<tr>
-		  			<td><textarea rows="10" cols="80" name="comment" id="comment" style="border-color: gray"></textarea></td>	
+		  			<td><textarea name="comment" id="comment" style="border-color: gray; width: 561px; height: 160px;"></textarea></td>	
 		  		</tr>
 	  		</table>
 	  		<fieldset id="fieldsetAd" style="border-color: white; display: none">			
-				<table border="0"  cellpadding="10px" id='selected-wiki'>
-					<tr><td><input type="button" value="Remove" id="remove"/></td></tr>
-					<tr><td></td><td>Name</td><td>Author</td><td>Version</td></tr>
+				<input type="button" value="Remove" id="remove" class="button"/>
+				<table border="0" style="width: 560px"  id='selected-wiki' cellspacing="0" class="teste">											
+					<thead>
+						<tr>
+							<td></td>
+							<td class="title">Name</td>
+							<td class="title">Author</td>
+							<td class="title">Version</td>
+						</tr>
+					</thead>					
 				</table>				
   			</fieldset>
-	  		<input type="submit" value="Send" id="send"/>  		
+	  		<input type="submit" value="Create Baseline" id="send" class="button"/>  		
   		</fieldset> 
   		
   		
   		<br clear="both"></br>  		  		  		
   		</form>					  		  		  				
     </div>
+    <script>
+    $("#frm_baseline").submit(function() {
+        if ($("#nm_baseline").val() != "") {
+          $("#msg").text("Validated...").show();
+          return true;
+        }
+        $("#msg").text("* Required!").show().fadeOut(10000);
+        return false;
+      });
+
+    </script>
   </body>
+  
 </html>

@@ -8,8 +8,8 @@ div {
 
 .teste table { margin: 1em; border-collapse: collapse;  }
 .teste td, th { padding: .3em; border: 0.5px #ccc solid; }
-.teste thead { background: red; text-align: center }
-.teste tbody { background: gray; }
+.teste thead { background: #708090; text-align: center }
+.teste tbody { background: #d6d6d6; }
 
 .button {    
   

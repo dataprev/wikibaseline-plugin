@@ -10,7 +10,7 @@ class BaselineProvider(Component):
     
     SCHEMA = [
         Table('baseline', key = ('id'))[
-              Column('id','serial'),
+              Column('id','int'),
               Column('name','varchar'),
               Column('dt','timestamp'),
               Column('comment'),

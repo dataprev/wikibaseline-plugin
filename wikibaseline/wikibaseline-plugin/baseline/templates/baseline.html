@@ -29,21 +29,25 @@
 				</tr>											
 			</table>								
 		</form>
-		<table border="0"  cellpadding="10px">
-			<tr>
-				<td></td>
-    			<td>Name</td>    			
-    			<td>Date</td>
-    			<td>Author</td>    			
-    		</tr>    		
-  			<py:for each="item in data">
-    			<tr>
-    				<td><input type="checkbox" name="checkbase" value="${item[0]}+"/></td>					
-    				<td><a href="${req.href('baseline')}/view?baselineId=${item[0]}">${item[1]}</a></td>    				    				    			
-    				<td>${item[2].__str__()}</td>
-    				<td>${item[3]}</td>						    				    			
-    			</tr>
-  			</py:for>  			  			  		
+		<table border="0"  cellpadding="10px" class="teste" style="width: 560px" cellspacing="0">
+			<thead>
+				<tr>
+					<td></td>
+	    			<td>Name</td>    			
+	    			<td>Date</td>
+	    			<td>Author</td>    			
+	    		</tr>
+    		</thead>
+    		<tbody>    		
+	  			<py:for each="item in data">
+	    			<tr>
+	    				<td><input type="checkbox" name="checkbase" value="${item[0]}+"/></td>					
+	    				<td><a href="${req.href('baseline')}/view?baselineId=${item[0]}">${item[1]}</a></td>    				    				    			
+	    				<td>${item[2].__str__()}</td>
+	    				<td>${item[3]}</td>						    				    			
+	    			</tr>
+	  			</py:for>
+  			</tbody>  			  			  		
   		</table>  		  		
   		<a href="${req.href('baseline')}/insert">New Baseline</a>					  		  		  				
     </div>

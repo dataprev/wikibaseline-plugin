@@ -1,4 +1,4 @@
-#from trac import Component
+
 class Baseline():
 
     def __init__(self,env = None,name = None,dt = None,comment = None,author = None):
@@ -16,7 +16,7 @@ class Baseline():
             resultset = cursor.fetchall()
             return resultset    
         except:
-            return "Erro!"
+            return "Error!"
     
     def searchBaseline(self,arg,pes):
         sql = "SELECT id,name,dt,author FROM baseline WHERE lower(%s) LIKE lower('%s%%');" %(arg,pes) 
@@ -26,7 +26,7 @@ class Baseline():
             resultset = cursor.fetchall()            
             return resultset    
         except:
-            return "Erro!"
+            return "Error!"
     
     def searchBaselineByItemBaseline(self,pes):
         sql = "SELECT DISTINCT baseline.id,baseline.name,baseline.dt,baseline.author FROM itembaseline INNER JOIN baseline ON (baseline_id = id) WHERE lower(wiki_name) LIKE lower('%s%%');" %pes
@@ -36,7 +36,7 @@ class Baseline():
             resultset = cursor.fetchall()
             return resultset
         except:
-            return "Erro!"
+            return "Error!"
 	
 
     def getWikiPages(self,arg):
@@ -47,22 +47,36 @@ class Baseline():
             resultset = cursor.fetchall()            
             return resultset    
         except:
-            return "Erro!"
+            return "Error!"
     
     def getBaselineByName(self):
         try:
             cursor = self.db.cursor()
             sql = "SELECT id FROM baseline WHERE name = '%s';" %self.name
             cursor.execute(sql)
-            resultset = cursor.fetchall()
-            #cursor.execute(sql,(self.id, self.name))
+            resultset = cursor.fetchall()            
             return resultset    
         except:
-            return "Erro!"
-            
+            return "Error!"
     
+    def getLastIdBaseline(self):                
+        try:
+            cursor = self.db.cursor()
+            sql = "SELECT MAX(id) FROM baseline;"
+            cursor.execute(sql)
+            resultset = cursor.fetchall()
+            return resultset
+        except:
+            return "Error!"            
+                
     def insertBaseline(self):
-        sql = "INSERT INTO baseline (name,dt,comment,author) VALUES ('%s','%s','%s','%s');" %(self.name,self.dt,self.comment,self.author)    
+        id = self.getLastIdBaseline()        
+        id = id[0][0]
+        if id == None:
+            sql = "INSERT INTO baseline (id,name,dt,comment,author) VALUES (1,'%s','%s','%s','%s');" %(self.name,self.dt,self.comment,self.author)
+        else:            
+            sql = "INSERT INTO baseline (id,name,dt,comment,author) VALUES (%i,'%s','%s','%s','%s');" %(id+1,self.name,self.dt,self.comment,self.author)            
+        
         try:
             cursor = self.db.cursor()
             cursor.execute(sql)
@@ -99,5 +113,5 @@ class ItemBaseline(object):
             resultset = cursor.fetchall()            
             return resultset    
         except:
-            return "Erro!"
+            return "Error!"
         

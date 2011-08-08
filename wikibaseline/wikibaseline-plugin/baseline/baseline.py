@@ -73,6 +73,7 @@ class BaselineModule(Component):
 		item = ItemBaseline(self.env,baseline_id)                                    	
 		baseline = Baseline(self.env,name,datetime.today(),comment,author) 
 		bbc = BaselineBusinessController()                                                  						 			
+		add_script(req, 'hw/js/jquery-1.5.2.min.js')
 		add_stylesheet(req, 'hw/css/baseline.css')				
 		
 		if command == "insert":

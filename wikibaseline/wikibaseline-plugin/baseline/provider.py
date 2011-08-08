@@ -6,6 +6,9 @@ from trac.db import Table, Column, Index
 
 
 class BaselineProvider(Component):
+    """
+    Class responsible for creating the database tables in the installation of the plugin
+    """
     implements(IEnvironmentSetupParticipant)
     
     SCHEMA = [

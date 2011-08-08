@@ -12,6 +12,7 @@
 		
 	$(document).ready(function() {	        
 	    
+		//Send the information to be inserted
 	    $("#send").click(
 	    		function(){
 	    			$('#selected-wiki').find('td').each(
@@ -29,7 +30,7 @@
 	    			
 	    )
 	
-	    
+	    //Returns wikis surveyed 
 	    $("#searchWiki").keypress(
 				function(){
 					$.ajax({								
@@ -43,6 +44,7 @@
 				}
 			)
 		
+		//Remove an item from the baseline before being registered
 		$("#remove").click(
 				function(){	    				    			
 	    			$('#selected-wiki').find('td').each(
@@ -61,7 +63,9 @@
 	    		}
 		)
 	    
-	    $("#add").live('click',
+	    
+		//Adds an item in the baseline
+		$("#add").live('click',
 	    		function(){	    				    			
 	    			$('#wikis').find('td').each(
 	    				function(){

@@ -1,7 +1,32 @@
 
 class Baseline():
+    """
+    Class responsible for operations in the database on baseline
+    """
 
     def __init__(self,env = None,name = None,dt = None,comment = None,author = None):
+        """
+        Method builder
+        
+        .. atritbute: env
+        
+        .. atribute: name
+        
+        Name of the baseline
+        
+        .. atribute: dt
+        
+        Date of the registration of a baseline
+        
+        .. atribute: comment
+        
+        Comments on a baseline                
+        
+        .. atribute: author
+        
+        Name the author of the baseline
+        
+        """
         self.env = env
         self.db = self.env.get_db_cnx()
         self.name = name
@@ -10,6 +35,9 @@ class Baseline():
         self.author = author
 
     def getBaseline(self):
+        """
+        List all baselines
+        """
         try:
             cursor = self.db.cursor()
             cursor.execute("SELECT id,name,dt,author FROM baseline ORDER BY name;")
@@ -19,6 +47,18 @@ class Baseline():
             return "Error!"
     
     def searchBaseline(self,arg,pes):
+        """
+        Search for a baseline
+        
+        .. atribute: arg
+        
+        Field name that is searched
+        
+        .. atribute: pes
+        
+        A term that is searched        
+        
+        """
         sql = "SELECT id,name,dt,author FROM baseline WHERE lower(%s) LIKE lower('%s%%');" %(arg,pes) 
         try:            
             cursor = self.db.cursor()
@@ -28,8 +68,17 @@ class Baseline():
         except:
             return "Error!"
     
-    def searchBaselineByItemBaseline(self,pes):
-        sql = "SELECT DISTINCT baseline.id,baseline.name,baseline.dt,baseline.author FROM itembaseline INNER JOIN baseline ON (baseline_id = id) WHERE lower(wiki_name) LIKE lower('%s%%');" %pes
+    def searchBaselineByItemBaseline(self,arg):
+        """
+        Search a baseline for wikis that are registered
+        
+        .. atribute: pes
+        
+        A term that is searched                  
+        
+        """
+        
+        sql = "SELECT DISTINCT baseline.id,baseline.name,baseline.dt,baseline.author FROM itembaseline INNER JOIN baseline ON (baseline_id = id) WHERE lower(wiki_name) LIKE lower('%s%%');" %arg
         try:
             cursor = self.db.cursor()
             cursor.execute(sql)
@@ -40,6 +89,14 @@ class Baseline():
 	
 
     def getWikiPages(self,arg):
+        """
+        Search wiki pages
+        
+        .. atribute: arg
+        
+        A term that is searched                  
+        
+        """
         sql = "SELECT DISTINCT name, MAX(version), author FROM wiki WHERE lower(name) LIKE lower('%%%s%%') GROUP BY name,author;" %arg 
         try:
             cursor = self.db.cursor()
@@ -50,6 +107,9 @@ class Baseline():
             return "Error!"
     
     def getBaselineByName(self):
+        """
+        Search by name a baseline
+        """
         try:
             cursor = self.db.cursor()
             sql = "SELECT id FROM baseline WHERE name = '%s';" %self.name
@@ -60,6 +120,9 @@ class Baseline():
             return "Error!"
     
     def getLastIdBaseline(self):                
+        """
+        Returns the last record id Inserts a new baseline
+        """
         try:
             cursor = self.db.cursor()
             sql = "SELECT MAX(id) FROM baseline;"
@@ -70,6 +133,9 @@ class Baseline():
             return "Error!"            
                 
     def insertBaseline(self):
+        """
+        Inserts a new baseline
+        """
         id = self.getLastIdBaseline()        
         id = id[0][0]
         if id == None:
@@ -86,9 +152,25 @@ class Baseline():
             return 0
 
 class ItemBaseline(object):
-        
+    """
+    Class responsible for operations in the database on itemBaseline
+    """    
     
     def __init__(self,env = None,baseline_id = None, wiki_name = None, wiki_version = None):
+        """
+        Method builder
+        
+        .. atritbute: env
+        
+        .. atribute: baseline_id
+        
+        Reference to the id of a baseline
+        
+        .. atribute: wiki_name, wiki_version
+        
+        Reference to a wiki page
+                
+        """
         self.env = env
         self.db = self.env.get_db_cnx()
         self.baseline_id = baseline_id
@@ -96,6 +178,9 @@ class ItemBaseline(object):
         self.wiki_version = wiki_version
 
     def insertItemBaseline(self):
+        """
+        Inserts a new itemBaseline
+        """
         sql = "INSERT INTO itembaseline (baseline_id,wiki_name,wiki_version) VALUES ('%s','%s','%s');" %(self.baseline_id,self.wiki_name,self.wiki_version)    
         try:
             cursor = self.db.cursor()
@@ -106,6 +191,9 @@ class ItemBaseline(object):
             return 0
         
     def getItemBaselineByBaselineId(self):        
+        """
+        Itembaseline search for a baseline by id
+        """
         sql = "SELECT * FROM itembaseline WHERE baseline_id = '%s';" %self.baseline_id    
         try:
             cursor = self.db.cursor()

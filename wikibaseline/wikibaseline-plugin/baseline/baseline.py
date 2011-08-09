@@ -46,15 +46,15 @@ class BaselineModule(Component):
 		"""
 		Creates an item in the main menu checking your permission				
 		"""
-		if 'BASELINE_VIEW' in req.perm('BASELINE'):
-			yield ('mainnav', 'baseline', tag.a('Baseline', href=req.href.baseline()))
+		#if 'BASELINE_VIEW' in req.perm('BASELINE'):
+		yield ('mainnav', 'baseline', tag.a('Baseline', href=req.href.baseline()))
 	
 	def match_request(self, req):		
 		"""
 		Create access link to the plugin considering the user's permission	
 		"""
-		if 'BASELINE_VIEW' in req.perm('BASELINE'):					
-			return re.match(r'/baseline(?:_trac)?(?:/.*)?$', req.path_info)
+		#if 'BASELINE_VIEW' in req.perm('BASELINE'):					
+		return re.match(r'/baseline(?:_trac)?(?:/.*)?$', req.path_info)
 	
 	def get_permission_actions(self):        		
 		return ['BASELINE_VIEW']
@@ -72,8 +72,7 @@ class BaselineModule(Component):
 		author = req.authname		
 		item = ItemBaseline(self.env,baseline_id)                                    	
 		baseline = Baseline(self.env,name,datetime.today(),comment,author) 
-		bbc = BaselineBusinessController()                                                  						 			
-		add_script(req, 'hw/js/jquery-1.5.2.min.js')
+		bbc = BaselineBusinessController()                                                  						 					
 		add_stylesheet(req, 'hw/css/baseline.css')				
 		
 		if command == "insert":

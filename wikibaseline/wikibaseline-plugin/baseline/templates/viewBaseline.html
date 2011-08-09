@@ -14,19 +14,23 @@
     <div id="content" class="helloworld">
 		<h1>Baseline</h1>				
 		<form method="GET">									
-		<table border="0"  cellpadding="10px">
-			<tr>
-				<!--<td></td>-->
-    			<td>Name</td>    			
-    			<td>Version</td>
-    		</tr>    		
-  			<py:for each="item in data">
-    			<tr>
-    				<!--<td><input type="checkbox" name="checkbase" value="${item[0]}+${item[1]}"/></td>-->					
-    				<td><a href="${req.href('wiki')}/${item[1]}?version=${item[2]}">${item[1]}</a></td>    				    				
-    				<td>${item[2]}</td>    										  				    			
-    			</tr>
-  			</py:for>  			  			  		
+		<table border="0"  cellspacing="0" style="width: 560px" class="teste">
+			<thead>
+				<tr>
+					<!--<td></td>-->
+	    			<td>Name</td>    			
+	    			<td>Version</td>
+	    		</tr>
+    		</thead> 
+    		<tbody>   		
+	  			<py:for each="item in data">
+	    			<tr>
+	    				<!--<td><input type="checkbox" name="checkbase" value="${item[0]}+${item[1]}"/></td>-->					
+	    				<td><a href="${req.href('wiki')}/${item[1]}?version=${item[2]}">${item[1]}</a></td>    				    				
+	    				<td>${item[2]}</td>    										  				    			
+	    			</tr>
+	  			</py:for>
+  			</tbody>  			  			  		
   		</table>  			
   		</form>					  		  		  				
     </div>

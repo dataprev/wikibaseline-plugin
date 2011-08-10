@@ -97,7 +97,9 @@ class Baseline():
         A term that is searched                  
         
         """
-        sql = "SELECT DISTINCT name, MAX(version), author FROM wiki WHERE lower(name) LIKE lower('%%%s%%') GROUP BY name,author;" %arg 
+        #sql = "SELECT DISTINCT name, MAX(version), author FROM wiki WHERE lower(name) LIKE lower('%%%s%%') GROUP BY name,author;" %arg
+        #sql = "SELECT name, MAX(version), author FROM wiki WHERE lower(name) LIKE lower('%%%s%%') GROUP BY name;" %arg
+        sql = "SELECT n.name,a.version,a.author from (select name,max(version) as version from wiki group by name) n, wiki a WHERE a.name = n.name AND a.version = n.version AND lower(n.name) LIKE lower('%%%s%%')  order by 1,2;" %arg
         try:
             cursor = self.db.cursor()
             cursor.execute(sql)

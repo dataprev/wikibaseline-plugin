@@ -46,15 +46,15 @@ class BaselineModule(Component):
 		"""
 		Creates an item in the main menu checking your permission				
 		"""
-		#if 'BASELINE_VIEW' in req.perm('BASELINE'):
-		yield ('mainnav', 'baseline', tag.a('Baseline', href=req.href.baseline()))
+		if 'BASELINE_VIEW' in req.perm('BASELINE'):
+			yield ('mainnav', 'baseline', tag.a('Baseline', href=req.href.baseline()))
 	
 	def match_request(self, req):		
 		"""
 		Create access link to the plugin considering the user's permission	
 		"""
-		#if 'BASELINE_VIEW' in req.perm('BASELINE'):					
-		return re.match(r'/baseline(?:_trac)?(?:/.*)?$', req.path_info)
+		if 'BASELINE_VIEW' in req.perm('BASELINE'):					
+			return re.match(r'/baseline(?:_trac)?(?:/.*)?$', req.path_info)
 	
 	def get_permission_actions(self):        		
 		return ['BASELINE_VIEW']

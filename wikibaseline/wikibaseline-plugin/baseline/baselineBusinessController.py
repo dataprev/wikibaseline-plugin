@@ -100,7 +100,7 @@ class BaselineBusinessController():
         
         """
         data={}            
-        
+        #There now exists a baseline registered with that name
         if baseline.insertBaseline() == "existing name":
             data["info"] = "There is a baseline already registered with that name!"
             return 'info.html', data, None

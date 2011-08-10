@@ -100,6 +100,11 @@ class BaselineBusinessController():
         
         """
         data={}            
+        
+        if baseline.insertBaseline() == "existing name":
+            data["info"] = "There is a baseline already registered with that name!"
+            return 'info.html', data, None
+            
         if baseline.insertBaseline():            
             id = baseline.getBaselineByName()
             if isinstance(check, list):

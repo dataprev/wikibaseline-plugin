@@ -140,18 +140,21 @@ class Baseline():
         """
         id = self.getLastIdBaseline()        
         id = id[0][0]
-        if id == None:
-            sql = "INSERT INTO baseline (id,name,dt,comment,author) VALUES (1,'%s','%s','%s','%s');" %(self.name,self.dt,self.comment,self.author)
+        if self.getBaselineByName().__len__() != 0:
+            return "existing name"
         else:            
-            sql = "INSERT INTO baseline (id,name,dt,comment,author) VALUES (%i,'%s','%s','%s','%s');" %(id+1,self.name,self.dt,self.comment,self.author)            
-        
-        try:
-            cursor = self.db.cursor()
-            cursor.execute(sql)
-            self.db.commit()                                        
-            return 1
-        except:
-            return 0
+            if id == None:
+                sql = "INSERT INTO baseline (id,name,dt,comment,author) VALUES (1,'%s','%s','%s','%s');" %(self.name,self.dt,self.comment,self.author)
+            else:            
+                sql = "INSERT INTO baseline (id,name,dt,comment,author) VALUES (%i,'%s','%s','%s','%s');" %(id+1,self.name,self.dt,self.comment,self.author)            
+            
+            try:
+                cursor = self.db.cursor()
+                cursor.execute(sql)
+                self.db.commit()                                        
+                return 1
+            except:
+                return 0
 
 class ItemBaseline(object):
     """

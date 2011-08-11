@@ -84,7 +84,7 @@ imp.filter.add('http://www.nikus.com/xog/Projects')
 imp.filter.add('http://www-dprojetos/niku/xog')
 d = ImportDoctor(imp)
 
-URL = "http://www-dprojetos/niku/wsdl/Object/TimePeriods"
+URL = "http://www-dprojetos/niku/wsdl/Object/Projects"
 
 client = Client(URL)
 
@@ -143,15 +143,31 @@ try:
 
 """
 
-	#hack! hugh! python minidom wrappers doesn't accept xml-declaration headers.
-	# see DOM specification for more information or implement NikuDataBus using
+	xml_projects = """
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="6.0.11" action="read" objectType="project" externalSource="NIKU">
+    <!-- you change the order by simply swap 1 and 2 number in the name attribute -->
+    <args name="order_by_1" value="name"/>
+    <args name="order_by_2" value="projectID"/>
+    <args name="include_tasks" value="true"/>
+  </Header>
+  <Query>
+  <Filter name="projectID" criteria="EQUALS">Teste_Aula05</Filter>
+  </Query>
+</NikuDataBus>
+
+"""
+
+   #hack! hugh! python minidom wrappers doesn't accept xml-declaration headers.
+   # see DOM specification for more information or implement NikuDataBus using
 	# ElementTree or lxml2
 	raw = project.__str__().replace('<?xml version="1.0" ?>','')
 
 #	rp = client.service.WriteTimeperiod(Raw(xml_w))
 
-#	rp = client.service.ReadTimeperiod(Raw(xml_r))
-	print rp
+	rp = client.service.ReadProject(Raw(xml_projects))
+	
+	print rp.Projects.Project.Tasks
 
 	client.service.Logout(id)
 except WebFault, e:

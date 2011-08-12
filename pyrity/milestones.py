@@ -142,7 +142,6 @@ try:
 </NikuDataBus>
 
 """
-
 	xml_projects = """
 <NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
   <Header version="6.0.11" action="read" objectType="project" externalSource="NIKU">
@@ -158,6 +157,22 @@ try:
 
 """
 
+	sql = """
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+<Header action="read" externalSource="NIKU" objectType="project" 
+version="6.0.11">
+<args name="order_by_1" value="name"/>
+<args name="order_by_2" value="projectID"/>
+<args name="include_tasks" value="true"/>
+</Header>
+<Query>
+<Filter criteria="EQUALS" name="projectID">Teste_Aula05</Filter>
+</Query>
+</NikuDataBus>
+
+"""
+
    #hack! hugh! python minidom wrappers doesn't accept xml-declaration headers.
    # see DOM specification for more information or implement NikuDataBus using
 	# ElementTree or lxml2
@@ -165,9 +180,8 @@ try:
 
 #	rp = client.service.WriteTimeperiod(Raw(xml_w))
 
-	rp = client.service.ReadProject(Raw(xml_projects))
-	
-	print rp.Projects.Project.Tasks
+	rp = client.service.ReadProject(Raw(sql))
+	print rp
 
 	client.service.Logout(id)
 except WebFault, e:
